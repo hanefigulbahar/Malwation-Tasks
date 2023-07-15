@@ -1,0 +1,53 @@
+Issues (Görev Yönetimi) Nedir?
+Issue Github’da projedeki hataları, bugları, yapılacak geliştirmeleri içeren bir yapıdır. Proje de diğer insanların sizden istekte bulunduğu veya hataları, bugları belirttiği bir yerdir.
+
+-Issue örneği 
+-Bir başlık ve açıklama içerir.
+-Renk kodlu etiketler issue’ları sınıflandırmak ve filtrelemek için kullanılabilir. ( gmail’deki etiket mantığı gibi). 
+-Milestone ( Kilometre taşı), issue’lar koymak için oluşturulan bir kap gibi düşünülebilir. Belirli özellikleri ya da proje fazlarını issue’larla ilişkilendirmek için yararlı bir yöntemdir. Örneğin; projenin versiyo 1.0'ı için şu issue’lar yapılacak, versiyon 2.0 için ise başka issue’lar gibi.
+-Verilen zaman içinde, verilen issue ile ilgilen kişiye ise assignee(devrelan) diyebiliriz. Bir organizasyon içinde hangi görevi kimin yapacağını assign (atama) edebiliyoruz.
+
+--bug : kırmızı renkte ve issue’nin hata ile ilgili olduğunu gösterir.
+--duplicate : çiftleme ile ilgili görev, gri renktedir.
+--enhancement : mavi renktedir ve geliştirme içeren görevlere verilen etikettir.
+--help wanted : yeşil renk olup , yardım isteme ile ilgili görevlerdir.
+--invalid : açık gri renktedir ve geçersiz görevler için kullanılmaktadır.
+--question : pembe renkte olup soru ile ilgili görevler için kullanılır.
+--wontfix : tahmin edilemeyen bir görev için kullanılır ve beyaz renktedir.Pull Request?
+GitHub Pull Request (PR), GitHub platformunda yazılım geliştirme sürecinde kullanılan bir iş akışı mekanizmasıdır. Bir Pull Request, bir projenin kaynak kod deposunda (repository) yapılan değişiklikleri değerlendirmek ve birleştirmek için diğer geliştiricilere sunulan bir talebi ifade eder.
+Bir geliştirici, bir proje üzerinde çalışırken, kaynak kod deposunda yapılacak değişiklikleri kendi dalında (branch) gerçekleştirir. Ardından, bu değişiklikleri projenin ana dalına (master veya main branch) entegre etmek için bir Pull Request oluşturur. Pull Request, projenin sahipleri veya yetkilileri tarafından gözden geçirilir ve değerlendirilir.
+Pull Request oluşturulduktan sonra, diğer geliştiriciler veya proje sahipleri, değişiklikleri inceleyebilir, tartışabilir ve geribildirimde bulunabilir. Bu süreçte, yorumlar, sorular veya düzenlemeler yapılabilir. Ayrıca, proje sahipleri, çakışmaları (conflicts) çözmek veya kodun uyumlu olmasını sağlamak için geliştiriciden bazı düzeltmeler yapmasını isteyebilir.
+Pull Request süreci tamamlandığında ve değişiklikler kabul edildiğinde, projenin ana dalına (master veya main branch) birleştirme (merge) işlemi gerçekleştirilir. Bu şekilde, yapılan değişiklikler projeye dahil edilir ve proje güncellenmiş bir hal alır.
+GitHub Pull Request mekanizması, projelerin daha kolay işbirliği yapmasını, kod incelemelerini kolaylaştırmasını ve değişikliklerin güvenli bir şekilde yönetilmesini sağlar. Proje sahipleri, değişikliklerin önceden incelenmesi ve test edilmesi için bir süzgeç görevi gören Pull Request mekanizması sayesinde daha güvenilir bir kod tabanı elde edebilirler. Ayrıca, takım çalışması, geribildirim alma ve kalite kontrol süreçlerini iyileştirmek için de önemli bir araçtır.
+
+Merge etmek nedir?
+GitHub'da "merge etmek" veya "birleştirmek", farklı daldaki (branch) değişiklikleri ana dala (master veya main branch) entegre etmek anlamına gelir. Birleştirme işlemi, bir Pull Request'in (PR) onaylanması veya doğrudan dalın ana dala birleştirilmesi yoluyla gerçekleştirilebilir.  İşte GitHub'da birleştirme sürecinin temel adımları:
+
+*Pull Request (PR) Oluşturma: İlk adım, projede yapılan değişiklikleri içeren bir dal (branch) oluşturmak ve bu dal üzerindeki değişiklikleri bir Pull Request ile ana dala birleştirmek için PR oluşturmaktır. PR oluşturulurken, değişikliklerin açıklaması ve nedeni gibi gerekli bilgiler sağlanır.
+*İnceleme ve Tartışma: Oluşturulan PR, diğer geliştiriciler veya proje sahipleri tarafından gözden geçirilir. Bu süreçte, değişiklikler hakkında tartışmalar yapılabilir, düzeltmeler talep edilebilir veya ek geribildirimlerde bulunulabilir. Değişikliklerin kalitesini ve doğruluğunu sağlamak için PR üzerinde inceleme yapılır.
+*Onay ve Birleştirme: PR, inceleme sürecinden sonra onaylanırsa, birleştirme (merge) işlemi gerçekleştirilir. Bu işlem, PR'nin ana dala birleştirilmesini sağlar. Birleştirme işlemi, GitHub web arayüzü üzerinden veya komut satırı aracılığıyla gerçekleştirilebilir.
+*Konflikt Çözümü: Eğer birleştirme işlemi sırasında, değiştirilen alanlarda çakışmalar (conflicts) varsa, bu çakışmaların çözülmesi gerekebilir. Çakışmalar, farklı daldaki değişikliklerin aynı satırlarda yapıldığı durumları ifade eder. Bu durumda, çakışmalar manuel olarak çözülmeli ve birleştirme işlemi tamamlanmalıdır.
+*Geri Bildirim ve Kapanış: Birleştirme işleminden sonra, ilgili PR kapatılır ve geri bildirimler sağlanır. Bu geri bildirimler, değişikliklerin başarıyla birleştirildiğini doğrulamak veya geliştiriciye daha fazla düzeltme talep etmek için kullanılabilir.
+
+Conflicts nedir?
+
+"Conflicts" veya "çakışmalar", birleştirme işlemi sırasında farklı daldaki değişikliklerin aynı dosyanın aynı satırlarında yapıldığı durumları ifade eder. Bu durumda, birleştirme işlemi otomatik olarak gerçekleştirilemez ve çakışmaların manuel olarak çözülmesi gerekmektedir. Conflicts çözümü, farklı değişiklikleri bir araya getirerek çakışmaları gidermeyi amaçlar.
+Conflicts çözümü adımları genellikle şu şekildedir:
+
+*Conflicts'in Tespit Edilmesi: Birleştirme işlemi sırasında, GitHub veya Git gibi versiyon kontrol sistemleri çakışmaları tespit eder ve hangi dosyalarda çakışma olduğunu bildirir.
+*Çakışma Dosyalarının İncelemesi: İlgili dosyaları açarak çakışmaları inceleyin. Çakışmalar genellikle "<<< HEAD", "===" ve ">>>" işaretleriyle belirtilir. Bu işaretler, ana dalın değişikliklerini, çakışan değişiklikleri ve diğer dalın değişikliklerini ayırmak için kullanılır.
+*Çakışmaların Çözülmesi: İlgili satırlarda hangi değişikliğin korunacağına veya nasıl birleştirileceğine karar verin. Çakışmaları çözmek için gereken düzenlemeleri yapın. Değişiklikleri nasıl birleştireceğinize bağlı olarak, çakışan satırları silip veya düzenleyip uygun birleşimi oluşturabilirsiniz.
+*Çözümlerinizin Kaydedilmesi: Çakışmaları çözdükten sonra dosyaları kaydedin ve değişiklikleri yerel çalışma alanınıza kaydedin.
+*Birleştirmenin Tamamlanması: Çakışmaları çözdükten sonra birleştirme işlemini tamamlayın. Bu, değiştirilen dosyaların değişikliklerini ve çözülen çakışmaları ana dala entegre etmeyi içerir.
+Conflicts çözümü, birleştirme işlemi sırasında farklı değişiklikleri bir araya getirmek için önemli bir adımdır. Doğru bir şekilde çözümlenmediğinde, kodun doğru çalışmasını engelleyebilir veya istenmeyen sonuçlara neden olabilir. Bu nedenle, conflicts çözümü sırasında dikkatli olunmalı ve çakışan değişiklikleri uygun bir şekilde birleştirmek için doğru kararlar alınmalıdır.
+
+https://docs.github.com
+
+
+
+
+
+
+
+
+
