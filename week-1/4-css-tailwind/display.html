@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="flex flex-col justify-center m-auto p-20 gap-10">
+      <!-- 
+        block: Elementi blok düzende görüntüler.
+        inline: Elementi satır düzende görüntüler.
+        inline-block: Elementi satır düzende görüntüler, ancak blok özelliklerine de sahiptir.
+    -->
+      <div class="border-2 border-blue-300 rounded-md p-5">
+        <div class="bg-blue-400 text-white rounded-md p-2 mb-5">
+          Block, Inline, Inline Block
+        </div>
+        <div>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus
+          officiis assumendaasdasd
+          <span class="inline bg-gray-300">display: inline</span>
+          reprehenderit eligendi illo sapiente, cumque qui consequuntur
+          quisquam. Porro, deleniti nam. Possimus, impedit dicta culpa rerum
+          ipsa id blanditiis alias excepturi adipisci
+          <span class="inline-block bg-gray-300">display: inline-block</span>
+          et, perferendis cupiditate dolor ea. Earum id alias, magni temporibus
+          impedit nesciunt itaque similique blanditiis hic qui sed! Voluptatibus
+          libero qui, quas dolorum doloribus eveniet! Unde alias, assumenda sunt
+          <span class="block bg-gray-300">display: block</span> doloribus sequi
+          nemo nobis accusamus ullam quos, sit nihil impedit facere aliquam
+          tenetur blanditiis quia autem dicta placeat porro! Ratione cum placeat
+          quod pariatur.
+        </div>
+      </div>
+
+      <!-- 
+        flow-root:
+        Float elementler, normal akıştan çıkar ve diğer elementlerin etrafında kayabilirler. Bu durumda,float elementlerin yüksekliğinin parent ve diğer elementlerden farklı olması durumunda taşma gerçekleşebilir ve bu sorunu flow-root ile çözebiliriz.
+      -->
+      <div class="border-2 border-blue-300 rounded-md p-5">
+        <div class="bg-blue-400 text-white rounded-md p-2 mb-5">Flow Root</div>
+        <div class="h-36">
+          <div class="bg-blue-300 border rounded-md">
+            <div class="float-left w-52 h-28 border rounded-md">
+              I am a floated box!
+            </div>
+            <p>I am content inside the container.</p>
+          </div>
+        </div>
+        <div class="h-36">
+          <div class="bg-blue-300 border rounded-md flow-root">
+            <div class="float-left w-52 h-28 border rounded-md">
+              I am a floated box!
+            </div>
+            <p>
+              I am content inside the <code>display:flow-root</code> container.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!--
+        flex:
+        Blok düzeyinde flex konteyner oluşturmak için kullanılır.
+      -->
+      <div class="border-2 border-blue-300 rounded-md p-5">
+        <div class="bg-blue-400 text-white rounded-md p-2 mb-5">Flex</div>
+        <div class="bg-blue-50 p-3 w-max rounded-md">
+          <div class="flex gap-6 items-center text-center">
+            <div class="w-20 h-20 rounded-full bg-blue-200"></div>
+            <div>
+              <div>Hanefi</div>
+              <div>Gülbahar</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--
+        inline-flex:
+        Metinle birlikte akan bir satır içi esnek kapsayıcı oluşturmak için inline-flex kullanılır.
+      -->
+      <div class="border-2 border-blue-300 rounded-md p-5">
+        <div class="bg-blue-400 text-white rounded-md p-2 mb-5">
+          Inline Flex
+        </div>
+        <div class="bg-blue-50 p-3 rounded-md w-96">
+          Lorem ipsum dolor, sit amet consectetur
+          <div class="inline-flex gap-1 items-center">
+            <div class="w-3 h-3 rounded-full bg-blue-200"></div>
+            <div>Hanefi</div>
+            <div>Gülbahar</div>
+          </div>
+          adipisicing elit. Ab, incidunt? Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Eaque doloremque laudantium atque natus, magnam vero
+          optio cumque deserunt accusamus aliquam consequatur minima libero enim
+          laboriosam maiores fugit. Odio, porro ullam.
+        </div>
+      </div>
+
+      <!--
+        grid: 
+        Bir elementin bir ızgara düzenine sahip olmasını sağlar..
+      -->
+      <div class="border-2 border-blue-300 rounded-md p-5">
+        <div class="bg-blue-400 text-white rounded-md p-2 mb-5">Grid</div>
+        <div class="grid gap-4 grid-cols-3 grid-rows-3">
+          <div class="bg-blue-50 p-3 rounded-md text-center">1</div>
+          <div class="bg-blue-50 p-3 rounded-md text-center">2</div>
+          <div class="bg-blue-50 p-3 rounded-md text-center">3</div>
+          <div class="bg-blue-50 p-3 rounded-md text-center">4</div>
+          <div class="bg-blue-50 p-3 rounded-md text-center">5</div>
+          <div class="bg-blue-50 p-3 rounded-md text-center">6</div>
+          <div class="bg-blue-50 p-3 rounded-md text-center">7</div>
+          <div class="bg-blue-50 p-3 rounded-md text-center">8</div>
+          <div class="bg-blue-50 p-3 rounded-md text-center">9</div>
+        </div>
+      </div>
+
+      <!--
+        inline-grid: 
+        Bir elementin içerik düzeninin ızgara tabanlı olmasını sağlar, ancak elementin kendisi bir blok yerine bir satır içi (inline) element olarak davranır.
+      -->
+      <div class="border-2 border-blue-300 rounded-md p-5">
+        <div class="bg-blue-400 text-white rounded-md p-2 mb-5">
+          Inline Grid
+        </div>
+
+        <div class="flex gap-10">
+          <div class="inline-grid gap-4 grid-cols-3 grid-rows-3">
+            <div class="bg-blue-50 p-3 rounded-md text-center">1</div>
+            <div class="bg-blue-50 p-3 rounded-md text-center">2</div>
+            <div class="bg-blue-50 p-3 rounded-md text-center">3</div>
+            <div class="bg-blue-50 p-3 rounded-md text-center">4</div>
+            <div class="bg-blue-50 p-3 rounded-md text-center">5</div>
+            <div class="bg-blue-50 p-3 rounded-md text-center">6</div>
+            <div class="bg-blue-50 p-3 rounded-md text-center">7</div>
+            <div class="bg-blue-50 p-3 rounded-md text-center">8</div>
+            <div class="bg-blue-50 p-3 rounded-md text-center">9</div>
+          </div>
+          <div class="inline-grid gap-4 grid-cols-3 grid-rows-3">
+            <div class="bg-blue-50 p-3 rounded-md text-center">1</div>
+            <div class="bg-blue-50 p-3 rounded-md text-center">2</div>
+            <div class="bg-blue-50 p-3 rounded-md text-center">3</div>
+            <div class="bg-blue-50 p-3 rounded-md text-center">4</div>
+            <div class="bg-blue-50 p-3 rounded-md text-center">5</div>
+            <div class="bg-blue-50 p-3 rounded-md text-center">6</div>
+            <div class="bg-blue-50 p-3 rounded-md text-center">7</div>
+            <div class="bg-blue-50 p-3 rounded-md text-center">8</div>
+            <div class="bg-blue-50 p-3 rounded-md text-center">9</div>
+          </div>
+        </div>
+      </div>
+
+      <!--
+         contents: 
+         Bir elementin alt öğelerinin (children), elementin kendisini yok sayarak, elementin üst elementinin doğrudan alt elementleriymiş gibi görünmesine neden olur. Bu, CSS ızgarası veya benzer düzen teknikleri kullanılırken bir sarmalayıcı element yok sayılması gerektiğinde kullanılabilir.
+      -->
+      <div class="border-2 border-blue-300 rounded-md p-5">
+        <div class="bg-blue-400 text-white rounded-md p-2 mb-5">Contents</div>
+        <div class="flex gap-2">
+          <div class="flex-1 bg-blue-50 p-3 rounded-md text-center">01</div>
+          <div class="contents">
+            <div class="flex-1 bg-blue-50 p-3 rounded-md text-center">02</div>
+            <div class="flex-1 bg-blue-50 p-3 rounded-md text-center">03</div>
+          </div>
+          <div class="flex-1 bg-blue-50 p-3 rounded-md text-center">04</div>
+        </div>
+      </div>
+
+      <!--
+        table, table-row, table-cell, table-caption, table-column, table-column-group, table-header-group,table-row-group, table-footer-group:
+        Kullanılan özellik tablo davranışı sergiler ve otomatik olarak satır ve sütunları oluşturur. Bu tablo yapısı, içerisine eklenen diğer elementlerin tablo hücreleri olarak kabul edilmesini sağlar.
+      -->
+      <div class="border-2 border-blue-300 rounded-md p-5">
+        <div class="bg-blue-400 text-white rounded-md p-2 mb-5">Table</div>
+        <table class="table w-full">
+          <thead class="table-header-group">
+            <tr class="table-row">
+              <th class="table-cell text-left">Name</th>
+              <th class="table-cell text-left">Surname</th>
+              <th class="table-cell text-left">Year</th>
+            </tr>
+          </thead>
+          <tbody class="table-row-group">
+            <tr class="table-row">
+              <td class="table-cell">Jhon</td>
+              <td class="table-cell">Dude</td>
+              <td class="table-cell">1961</td>
+            </tr>
+            <tr class="table-row">
+              <td class="table-cell">Emily</td>
+              <td class="table-cell">Rains</td>
+              <td class="table-cell">1972</td>
+            </tr>
+            <tr class="table-row">
+              <td class="table-cell">Aurora</td>
+              <td class="table-cell">Song</td>
+              <td class="table-cell">1975</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!--
+        hidden:
+        Bir elementinin görünmez hale getirilmesi için kullanılır. Bu özellik, elementin yerini tutmaz ve sayfa düzeninde hiçbir iz bırakmaz.
+      -->
+      <div class="border-2 border-blue-300 rounded-md p-5">
+        <div class="bg-blue-400 text-white rounded-md p-2 mb-5">Hidden</div>
+        <div class="flex gap-2">
+          <div class="hidden bg-blue-50 p-3 rounded-md text-center">1</div>
+          <div class="bg-blue-50 p-3 rounded-md text-center">2</div>
+          <div class="bg-blue-50 p-3 rounded-md text-center">3</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
