@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!--
+    CSS Box Model, web tasarımında bir elementin boyutunu ve yerleşimini belirleyen bir kavramdır. Bir elementin içeriği, kenar boşlukları, kenarlık ve dolgu ile birlikte bir kutu olarak düşünülür. Bu kutu, elementin boyutunu ve pozisyonunu belirler.
+
+    CSS Box Model, aşağıdaki bileşenlerden oluşur:
+
+    İçerik (Content): Elementin içerdiği metin, resim veya diğer içerikler bu bölümde bulunur. İçerik, genişlik (width) ve yükseklik (height) özellikleriyle kontrol edilir.
+
+    Dolgu (Padding): İçerik ile kenar boşlukları arasındaki bölümdür. Dolgu, içeriğin ve kenarlığın arasına ekstra bir boşluk ekler. Dolgu, padding özelliği kullanılarak belirlenir.
+
+    Kenarlık (Border): İçerik ve dolgu bölümlerini çevreleyen çizgidir. Kenarlık, elementin sınırlarını belirler. Kenarlık, border özelliği kullanılarak belirlenir.
+
+    Kenar Boşluğu (Margin): Elementin diğer elementlere olan mesafesini belirleyen bölümdür. Kenar boşluğu, elementin etrafındaki boşluk miktarını temsil eder. Kenar boşluğu, margin özelliği kullanılarak belirlenir.
+
+
+    +----------------------------------+
+    |              Margin              |
+    +----------------------------------+
+    |           Border                 |
+    |   +--------------------------+   |
+    |   |       Padding            |   |
+    |   |   +------------------+   |   |
+    |   |   |     Content      |   |   |
+    |   |   +------------------+   |   |
+    |   +--------------------------+   |
+    |                                  |
+    +----------------------------------+
+
+
+    CSS Box Model, elementlerin boyutunu ve pozisyonunu belirleyerek tasarımın düzenini kontrol etmenizi sağlar. Her bileşenin genişlik, yükseklik, dolgu ve kenarlık değerleriyle ayarlanabilir. Kenar boşlukları ise elementler arasındaki mesafeyi belirleyerek düzenlemeyi etkiler.
+    -->
+
+    <div class="flex flex-col gap-10 p-10 m-3 border shadow-md rounded-3xl">
+      <h1 class="text-2xl text-center">Box Model</h1>
+      <div
+        class="border-[30px] border-blue-300 bg-blue-50 rounded-xl p-20 m-20">
+        <div class="p-3">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione
+          cupiditate, architecto ex, repellendus quis provident fugit quisquam
+          nihil quasi unde at nulla vel, omnis ad molestias enim pariatur
+          officiis veritatis. Atque itaque expedita, in praesentium magnam hic
+          aut similique quam amet ullam natus dolorum, quisquam iste eaque
+          debitis asperiores illum? Natus earum velit at rerum ex sed fuga
+          veniam! Iste eligendi ex cumque adipisci ab omnis! Eaque itaque
+          dolores sequi aperiam perferendis totam tempore soluta, incidunt
+          mollitia, aliquid quia in rem quod ducimus. Consequatur inventore
+          totam, quam alias incidunt atque non eveniet aspernatur rem quibusdam
+          doloribus! Maiores modi eaque rem!
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
