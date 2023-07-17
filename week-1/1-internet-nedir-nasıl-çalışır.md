@@ -11,7 +11,7 @@ World Wide Web'in birbirine bağlı hiper metin belgeleri ve uygulamaları, elek
 Bütün ağ şebekeleri, fiziksel altyapılar ve yönlendirici adı verilen router’lar birbirleriyle bağlantı içerisindedir.Bu süreçte bir bilgisayardan gönderilen bir mesaj, dünya çapında yayılmış olan bu ağlardan geçerek, mesajın gönderildiği bilgisayara bir saniyeden daha kısa bir zaman içinde ulaşır. Bir bilgisayardan diğerine aktarılacak verinin hangi yoldan hedefe ulaştırılacağını yönlendiriciler (Router) belirler.
 
 Routerlar hedefe ulaşmak isteyen mesajınızı diğer internet kullanıcısına ulaştırmak için tasarlanmış özel işlemler yapabilen bilgisayarlardır. Roter’ların iki önemli görevi vardır.
-- Bir bilginin gitmemese gereken yere gitmemesini garanti etmek 
+- Bir bilginin gitmesi gereken yere gitmesini garanti etmek 
 - Mesajın istenen istikamette gittiğinden emin olmak.
 
 İnternet üzerindeki her bir makine, IP(Internet Protocol) adresi adında özel numaralara sahiptir. Biz internet üzerinde iletişimi bu numaralar sayesinde sağlayabiliriz. Ancak şu an web sayfalarına giderken numara değil de `www.google.com` gibi adresler gördüğümüzü söyleyebilirsiniz. Bu isimlendirmeleri de DNS sayesinde yapıyoruz. DNS (Domain Name System) IP adresleri akılda kalıcı olmadığından, IP adreslerini belirli isimlerle değiştirmemizi sağlar.
