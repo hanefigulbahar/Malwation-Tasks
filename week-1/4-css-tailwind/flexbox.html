@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="flex flex-col justify-center m-auto p-20 gap-10">
+      <!-- 
+        Flexbox, bir konteyner elementi (parent) ve içerisinde yer alan öğelerden (children) oluşur. Bu teknik, öğeleri dinamik olarak hizalamak, sıralamak ve düzenlemek için kullanılır.
+        Flexbox, dikey veya yatay yönde hizalama ve dağıtım işlemlerini kolaylaştırır. Öğelerin boyutları, içeriği ve sıralaması gibi özellikleri üzerinde etkili kontrol sağlar.
+    -->
+      <div class="text-2xl text-center">FLEXBOX</div>
+      <!--
+        Flex Basis:
+        Flexbox modelinde bir flex öğesinin başlangıç genişliğini belirler. Bu özelliği kullanarak bir flex öğesinin ne kadar alanı kaplayacağını veya başlangıç genişliğini ayarlayabilirsiniz.
+      -->
+      <div class="bg-blue-500 text-white p-3 rounded-md text-xl text-center">
+        Flex Basis
+      </div>
+      <div class="border-2 border-blue-300 rounded-md p-5">
+        <div class="flex gap-3">
+          <div class="basis-1/4 bg-blue-50 p-3 rounded-md">01</div>
+          <div class="basis-1/4 bg-blue-50 p-3 rounded-md">02</div>
+          <div class="basis-1/2 bg-blue-50 p-3 rounded-md">03</div>
+        </div>
+      </div>
+
+      <!--
+        Flex Direction:
+        Flexbox modelinde bir flex konteynerindeki öğelerin hizalanma yönlüğünü belirler. Bu özellik, öğelerin sıralanma yönünü ve esneklik eksenini kontrol etmek için kullanılır.
+      -->
+      <div class="bg-blue-500 text-white p-3 rounded-md text-xl text-center">
+        Flex Direction
+      </div>
+      <!-- 
+        flex-row:
+        Öğeleri yatay olarak sıralar (varsayılan değer). Soldan sağa doğru hizalar.
+    -->
+      <div class="border-2 border-blue-300 rounded-md p-5">
+        <div class="bg-blue-400 text-white rounded-md p-2 mb-5">Flex Row</div>
+        <div class="flex flex-row gap-3">
+          <div class="bg-blue-50 p-3 rounded-md">01</div>
+          <div class="bg-blue-50 p-3 rounded-md">02</div>
+          <div class="bg-blue-50 p-3 rounded-md">03</div>
+        </div>
+      </div>
+
+      <!-- 
+        flex-row-reverse:
+        Öğeleri yatay olarak ters sıralar. Sağdan sola doğru hizalar.
+    -->
+      <div class="border-2 border-blue-300 rounded-md p-5">
+        <div class="bg-blue-400 text-white rounded-md p-2 mb-5">
+          Flex Row Reverse
+        </div>
+        <div class="flex flex-row-reverse gap-3">
+          <div class="bg-blue-50 p-3 rounded-md">01</div>
+          <div class="bg-blue-50 p-3 rounded-md">02</div>
+          <div class="bg-blue-50 p-3 rounded-md">03</div>
+        </div>
+      </div>
+
+      <!-- 
+        flex-col:
+        Öğeleri dikey olarak sıralar. Yukarıdan aşağıya doğru hizalar.
+    -->
+      <div class="border-2 border-blue-300 rounded-md p-5">
+        <div class="bg-blue-400 text-white rounded-md p-2 mb-5">Flex Col</div>
+        <div class="flex flex-col gap-3">
+          <div class="bg-blue-50 p-3 rounded-md">01</div>
+          <div class="bg-blue-50 p-3 rounded-md">02</div>
+          <div class="bg-blue-50 p-3 rounded-md">03</div>
+        </div>
+      </div>
+
+      <!-- 
+        flex-col-reverse:
+        Öğeleri dikey olarak ters sıralar. Aşağıdan yukarıya doğru hizalar.
+    -->
+      <div class="border-2 border-blue-300 rounded-md p-5">
+        <div class="bg-blue-400 text-white rounded-md p-2 mb-5">
+          Flex Col Reverse
+        </div>
+        <div class="flex flex-col-reverse gap-3">
+          <div class="bg-blue-50 p-3 rounded-md">01</div>
+          <div class="bg-blue-50 p-3 rounded-md">02</div>
+          <div class="bg-blue-50 p-3 rounded-md">03</div>
+        </div>
+      </div>
+
+      <!--
+        Flex Wrap:
+        Flexbox modelinde bir flex konteynerindeki öğelerin sığdırma veya taşma davranışını belirler. Bu özellik, öğelerin tek bir satırda sığmaması durumunda nasıl davranacaklarını kontrol etmek için kullanılır.
+      -->
+      <div class="bg-blue-500 text-white p-3 rounded-md text-xl text-center">
+        Flex Wrap
+      </div>
+      <!-- 
+        flex-nowrap:
+        Öğeleri tek bir satırda sıralar ve taşma durumunda küçültmeye çalışır (varsayılan değer).
+    -->
+      <div class="border-2 border-blue-300 rounded-md p-5">
+        <div class="bg-blue-400 text-white rounded-md p-2 mb-5">
+          Flex Nowrap
+        </div>
+        <div class="flex flex-nowrap gap-3">
+          <div class="w-[800px] bg-blue-50 p-3 rounded-md">01</div>
+          <div class="w-[800px] bg-blue-50 p-3 rounded-md">02</div>
+          <div class="w-[800px] bg-blue-50 p-3 rounded-md">03</div>
+        </div>
+      </div>
+
+      <!-- 
+        flex-wrap:
+        Öğeleri birden fazla satırda sıralar. Taşma durumunda yeni satıra geçer.
+    -->
+      <div class="border-2 border-blue-300 rounded-md p-5">
+        <div class="bg-blue-400 text-white rounded-md p-2 mb-5">Flex Wrap</div>
+        <div class="flex flex-wrap gap-3">
+          <div class="w-96 bg-blue-50 p-3 rounded-md">01</div>
+          <div class="w-96 bg-blue-50 p-3 rounded-md">02</div>
+          <div class="w-96 bg-blue-50 p-3 rounded-md">03</div>
+        </div>
+      </div>
+
+      <!-- 
+        flex-wrap-reverse:
+        Öğeleri birden fazla satırda sıralar. Taşma durumunda yeni satıra geçer.
+    -->
+      <div class="border-2 border-blue-300 rounded-md p-5">
+        <div class="bg-blue-400 text-white rounded-md p-2 mb-5">
+          Flex Wrap Reverse
+        </div>
+        <div class="flex flex-wrap-reverse gap-3">
+          <div class="w-96 bg-blue-50 p-3 rounded-md">01</div>
+          <div class="w-96 bg-blue-50 p-3 rounded-md">02</div>
+          <div class="w-96 bg-blue-50 p-3 rounded-md">03</div>
+        </div>
+      </div>
+
+      <!--
+        Flex:
+        Flexbox modelinde bir flex öğesinin esneklik davranışını belirler. Bu özellik, öğenin nasıl genişlik dağılımı yapacağını ve esneklik özelliğini kontrol etmek için kullanılır.
+      -->
+      <div class="bg-blue-500 text-white p-3 rounded-md text-xl text-center">
+        Flex
+      </div>
+      <!-- 
+        flex-initial:
+        İlk boyutunu dikkate alarak küçülmesine ancak büyümemesine izin vermek için kullanılır.
+
+        flex-1:
+        İlk boyutunu göz ardı ederek gerektiği gibi büyümesine ve küçülmesine izin vermek için kullanılır.
+
+        flex-auto:
+        İlk boyutunu dikkate alarak büyümesine ve küçülmesine izin vermek için kullanılır.
+
+        flex-none:
+        Esnek bir öğenin büyümesini veya küçülmesini önlemek için kullanılır
+    -->
+      <div class="border-2 border-blue-300 rounded-md p-5">
+        <div class="flex gap-3">
+          <div class="flex-none w-14 bg-blue-50 p-3 rounded-md">01</div>
+          <div class="flex-initial w-64 bg-blue-50 p-3 rounded-md">02</div>
+          <div class="flex-auto w-32 bg-blue-50 p-3 rounded-md">03</div>
+          <div class="flex-1 w-20 bg-blue-50 p-3 rounded-md">04</div>
+        </div>
+      </div>
+
+      <!--
+        Flex Grow:
+        Flexbox modelinde bir flex öğesinin büyüme özelliğini belirler. Bu özellik, öğelerin genişliklerinin ne kadar oranda büyüyeceğini ve alanın nasıl paylaşılacağını kontrol etmek için kullanılır.
+      -->
+      <div class="bg-blue-500 text-white p-3 rounded-md text-xl text-center">
+        Flex Grow
+      </div>
+      <!-- 
+        flex-grow: 
+        Bir flex öğesine uygulandığında, öğenin büyüme faktörünü belirler. Bu faktör, diğer öğelerle kıyaslandığında öğenin ne kadar büyüyeceğini belirler.
+    -->
+      <div class="border-2 border-blue-300 rounded-md p-5">
+        <div class="flex gap-3">
+          <div class="grow bg-blue-50 p-3 rounded-md">01</div>
+          <div class="grow flex-none bg-blue-50 p-3 rounded-md">02</div>
+          <div class="grow-0 flex-none bg-blue-50 p-3 rounded-md">03</div>
+          <div class="grow flex-none bg-blue-50 p-3 rounded-md">04</div>
+        </div>
+      </div>
+
+      <div class="border-2 border-blue-300 rounded-md p-5">
+        <div class="flex gap-3">
+          <div class="flex-none w-14 bg-blue-50 p-3 rounded-md">01</div>
+          <div class="flex-none w-14 bg-blue-50 p-3 rounded-md">02</div>
+          <div class="grow bg-blue-50 p-3 rounded-md">03</div>
+          <div class="flex-none w-14 bg-blue-50 p-3 rounded-md">04</div>
+        </div>
+      </div>
+
+      <!--
+        Flex Shrink:
+        Flexbox modelinde bir flex öğesinin büyüme özelliğini belirler. Bu özellik, öğelerin genişliklerinin ne kadar oranda büyüyeceğini ve alanın nasıl paylaşılacağını kontrol etmek için kullanılır.
+      -->
+      <div class="bg-blue-500 text-white p-3 rounded-md text-xl text-center">
+        Flex Shrink
+      </div>
+      <!-- 
+        shrink-0: 
+        Bir flex öğesine uygulandığında, öğenin küçülmesi engellenir ve genişlik değişmez.
+
+        shrink:
+        Bir flex öğesine uygulandığında, öğenin küçülmesi genişlik dağılımında daha fazla küçülebilecektir.
+
+    -->
+      <div class="border-2 border-blue-300 rounded-md p-5">
+        <div class="flex gap-3">
+          <div class="flex-none bg-blue-50 p-3 rounded-md">01</div>
+          <div class="flex-none bg-blue-50 p-3 rounded-md">02</div>
+          <div class="shrink w-96 bg-blue-50 p-3 rounded-md">03</div>
+          <div class="flex-none bg-blue-50 p-3 rounded-md">04</div>
+        </div>
+      </div>
+
+      <div class="border-2 border-blue-300 rounded-md p-5">
+        <div class="flex gap-3">
+          <div class="flex-1 bg-blue-50 p-3 rounded-md">01</div>
+          <div class="flex-1 bg-blue-50 p-3 rounded-md">02</div>
+          <div class="shrink-0 w-96 bg-blue-50 p-3 rounded-md">03</div>
+          <div class="flex-1 bg-blue-50 p-3 rounded-md">04</div>
+        </div>
+      </div>
+
+      <!--
+        CSS Grid Layout modelinde bir grid konteynerindeki satırların dikey (vertical) hizalanmasını belirler. Bu özellik, satırların dikey yönde nasıl yerleştirileceğini ve aralarındaki boşluğu kontrol etmek için kullanılır.
+      -->
+      <div class="bg-blue-500 text-white p-3 rounded-md text-xl text-center">
+        Content
+      </div>
+      <!-- 
+        content-start:
+        Her satır yalnızca ihtiyaç duyduğu alanı dolduracaktır. Hepsi flexbox/grid konteynerinin başlangıcına doğru hareket edecektir.
+    -->
+      <div class="border-2 border-blue-300 rounded-md p-5">
+        <div class="bg-blue-400 text-white rounded-md p-2 mb-5">
+          Content Start
+        </div>
+        <div class="h-56 grid grid-cols-3 gap-4 content-start">
+          <div class="bg-blue-50 p-3 rounded-md">1</div>
+          <div class="bg-blue-50 p-3 rounded-md">2</div>
+          <div class="bg-blue-50 p-3 rounded-md">3</div>
+          <div class="bg-blue-50 p-3 rounded-md">4</div>
+          <div class="bg-blue-50 p-3 rounded-md">5</div>
+        </div>
+      </div>
+
+      <!-- 
+        content-end:
+        Her satır yalnızca ihtiyaç duyduğu alanı dolduracaktır. Hepsi flexbox/grid konteynerinin sonuna doğru hareket edecektir.
+    -->
+      <div class="border-2 border-blue-300 rounded-md p-5">
+        <div class="bg-blue-400 text-white rounded-md p-2 mb-5">
+          Content End
+        </div>
+        <div class="h-56 grid grid-cols-3 gap-4 content-end">
+          <div class="bg-blue-50 p-3 rounded-md">1</div>
+          <div class="bg-blue-50 p-3 rounded-md">2</div>
+          <div class="bg-blue-50 p-3 rounded-md">3</div>
+          <div class="bg-blue-50 p-3 rounded-md">4</div>
+          <div class="bg-blue-50 p-3 rounded-md">5</div>
+        </div>
+      </div>
+
+      <!-- 
+        content-center:
+        Her satır yalnızca ihtiyaç duyduğu alanı dolduracaktır. Hepsi flexbox/grid konteynerinin merkezine doğru hareket edecektir.
+    -->
+      <div class="border-2 border-blue-300 rounded-md p-5">
+        <div class="bg-blue-400 text-white rounded-md p-2 mb-5">
+          Content Center
+        </div>
+        <div class="h-56 grid grid-cols-3 gap-4 content-center">
+          <div class="bg-blue-50 p-3 rounded-md">1</div>
+          <div class="bg-blue-50 p-3 rounded-md">2</div>
+          <div class="bg-blue-50 p-3 rounded-md">3</div>
+          <div class="bg-blue-50 p-3 rounded-md">4</div>
+          <div class="bg-blue-50 p-3 rounded-md">5</div>
+        </div>
+      </div>
+
+      <!-- 
+        content-between:
+        Her satır yalnızca ihtiyaç duyduğu alanı dolduracaktır. Kalan boşluk satırların arasında görünecektir.
+    -->
+      <div class="border-2 border-blue-300 rounded-md p-5">
+        <div class="bg-blue-400 text-white rounded-md p-2 mb-5">
+          Content Between
+        </div>
+        <div class="h-56 grid grid-cols-3 gap-4 content-between">
+          <div class="bg-blue-50 p-3 rounded-md">1</div>
+          <div class="bg-blue-50 p-3 rounded-md">2</div>
+          <div class="bg-blue-50 p-3 rounded-md">3</div>
+          <div class="bg-blue-50 p-3 rounded-md">4</div>
+          <div class="bg-blue-50 p-3 rounded-md">5</div>
+        </div>
+      </div>
+
+      <!-- 
+        content-around:
+        Her satır yalnızca ihtiyaç duyduğu alanı dolduracaktır. Öğeleri dikey yönde kaplayıcı (container) içinde eşit boşluklar bırakarak dağıtır. Öğeler arasında eşit miktarda boşluk bırakılır ve en dış öğeler kaplayıcıya (container) olan uzaklıkla diğer öğeler arasında eşit boşluk oluşturulur.
+    -->
+      <div class="border-2 border-blue-300 rounded-md p-5">
+        <div class="bg-blue-400 text-white rounded-md p-2 mb-5">
+          Content Around
+        </div>
+        <div class="h-56 grid grid-cols-3 gap-4 content-around">
+          <div class="bg-blue-50 p-3 rounded-md">1</div>
+          <div class="bg-blue-50 p-3 rounded-md">2</div>
+          <div class="bg-blue-50 p-3 rounded-md">3</div>
+          <div class="bg-blue-50 p-3 rounded-md">4</div>
+          <div class="bg-blue-50 p-3 rounded-md">5</div>
+        </div>
+      </div>
+
+      <!-- 
+        content-evenly:
+        Her satır yalnızca ihtiyaç duyduğu alanı dolduracaktır. öğeleri dikey yönde kaplayıcı (container) içinde eşit boşluklar bırakarak dağıtır. Öğeler arasında ve öğelerin etrafında eşit miktarda boşluk bırakılır. 
+    -->
+      <div class="border-2 border-blue-300 rounded-md p-5">
+        <div class="bg-blue-400 text-white rounded-md p-2 mb-5">
+          Content Evenly
+        </div>
+        <div class="h-56 grid grid-cols-3 gap-4 content-evenly">
+          <div class="bg-blue-50 p-3 rounded-md">1</div>
+          <div class="bg-blue-50 p-3 rounded-md">2</div>
+          <div class="bg-blue-50 p-3 rounded-md">3</div>
+          <div class="bg-blue-50 p-3 rounded-md">4</div>
+          <div class="bg-blue-50 p-3 rounded-md">5</div>
+        </div>
+      </div>
+      <!--* content-around ve content-evelyn İki özellik arasındaki temel fark, space-around'ın en dış öğelerin kaplayıcıya olan uzaklığını boşluğun yarısına kadar oluşturması, space-evenly'nin ise en dış öğeler ve öğeler arasında eşit miktarda boşluklar bırakmasıdır. space-around daha geniş bir boşluk aralığına sahipken, space-evenly daha eşit dağıtılmış bir boşluk aralığı sağlar.*-->
+
+      <!-- 
+        content-stretch:
+        Her satır kalan alanı dolduracak şekilde uzar. 
+    -->
+      <div class="border-2 border-blue-300 rounded-md p-5">
+        <div class="bg-blue-400 text-white rounded-md p-2 mb-5">
+          Content Stretch
+        </div>
+        <div class="h-56 grid grid-cols-3 gap-4 content-stretch">
+          <div class="bg-blue-50 p-3 rounded-md">1</div>
+          <div class="bg-blue-50 p-3 rounded-md">2</div>
+          <div class="bg-blue-50 p-3 rounded-md">3</div>
+          <div class="bg-blue-50 p-3 rounded-md">4</div>
+          <div class="bg-blue-50 p-3 rounded-md">5</div>
+        </div>
+      </div>
+
+      <!--
+         Flexbox modelinde yer alan öğelerin dikey düzlemde nasıl dağıtılacağını ve hizalanacağını kontrol etmek için kullanılır.
+      -->
+      <div class="bg-blue-500 text-white p-3 rounded-md text-xl text-center">
+        Items
+      </div>
+      <!-- 
+        items-stretch:
+        Flexbox öğelerinin tüm dikey alanı dolduracak şekilde hizalanır.
+    -->
+      <div class="border-2 border-blue-300 rounded-md p-5">
+        <div class="bg-blue-400 text-white rounded-md p-2 mb-5">
+          Items Stretch
+        </div>
+        <div class="flex gap-2 items-stretch">
+          <div class="py-4 bg-blue-50 p-3 rounded-md">1</div>
+          <div class="py-12 bg-blue-50 p-3 rounded-md">2</div>
+          <div class="py-8 bg-blue-50 p-3 rounded-md">3</div>
+        </div>
+      </div>
+      <!-- 
+        items-start:
+        Flexbox öğelerinin üstte dikey olarak hizalanır.
+    -->
+      <div class="border-2 border-blue-300 rounded-md p-5">
+        <div class="bg-blue-400 text-white rounded-md p-2 mb-5">
+          Items Start
+        </div>
+        <div class="flex gap-2 items-start">
+          <div class="py-4 bg-blue-50 p-3 rounded-md">1</div>
+          <div class="py-12 bg-blue-50 p-3 rounded-md">2</div>
+          <div class="py-8 bg-blue-50 p-3 rounded-md">3</div>
+        </div>
+      </div>
+
+      <!-- 
+        items-end:
+        Flexbox öğelerinin altta dikey olarak hizalanır.
+    -->
+      <div class="border-2 border-blue-300 rounded-md p-5">
+        <div class="bg-blue-400 text-white rounded-md p-2 mb-5">Items End</div>
+        <div class="flex gap-2 items-end">
+          <div class="py-4 bg-blue-50 p-3 rounded-md">1</div>
+          <div class="py-12 bg-blue-50 p-3 rounded-md">2</div>
+          <div class="py-8 bg-blue-50 p-3 rounded-md">3</div>
+        </div>
+      </div>
+
+      <!-- 
+        items-center:
+        Flexbox öğelerinin ortada dikey olarak hizalanır.
+    -->
+      <div class="border-2 border-blue-300 rounded-md p-5">
+        <div class="bg-blue-400 text-white rounded-md p-2 mb-5">
+          Items Center
+        </div>
+        <div class="flex gap-2 items-center">
+          <div class="py-4 h-12 bg-blue-50 p-3 rounded-md">1</div>
+          <div class="py-4 h-20 bg-blue-50 p-3 rounded-md">2</div>
+          <div class="py-4 h-18 bg-blue-50 p-3 rounded-md">3</div>
+        </div>
+      </div>
+
+      <!-- 
+        items-center:
+        Flexbox öğelerinin metinlerinin taban çizgisi hedef alınarak hizalanır.
+    -->
+      <div class="border-2 border-blue-300 rounded-md p-5">
+        <div class="bg-blue-400 text-white rounded-md p-2 mb-5">
+          Items Center
+        </div>
+        <div class="flex gap-2 items-baseline">
+          <div class="py-4 h-12 bg-blue-50 p-3 rounded-md">1</div>
+          <div class="py-4 h-20 bg-blue-50 p-3 rounded-md">2</div>
+          <div class="py-4 h-18 bg-blue-50 p-3 rounded-md">3</div>
+        </div>
+      </div>
+
+      <div class="bg-blue-500 text-white p-3 rounded-md text-xl text-center">
+        Self
+      </div>
+
+      <!-- 
+        self-auto:
+        Kapsayıcının align-items özelliğinin değerine göre bir öğeyi hizalamak için kullanılır.Default özelliktir.
+    -->
+      <div class="border-2 border-blue-300 rounded-md p-5">
+        <div class="bg-blue-400 text-white rounded-md p-2 mb-5">Self Auto</div>
+        <div class="flex gap-2 h-32 items-stretch">
+          <div class="py-4 bg-blue-50 p-3 rounded-md">1</div>
+          <div class="self-auto py-4 bg-blue-50 p-3 rounded-md">2</div>
+          <div class="py-4 bg-blue-50 p-3 rounded-md">3</div>
+        </div>
+      </div>
+
+      <!-- 
+        self-start:
+        Kapsayıcının align-items özelliğinin değerine göre hedef öğeyi başlanğıç hizasına hizalamak için kullanılır.
+    -->
+      <div class="border-2 border-blue-300 rounded-md p-5">
+        <div class="bg-blue-400 text-white rounded-md p-2 mb-5">Self Start</div>
+        <div class="flex gap-2 h-32 items-stretch">
+          <div class="py-4 bg-blue-50 p-3 rounded-md">1</div>
+          <div class="self-start py-4 bg-blue-50 p-3 rounded-md">2</div>
+          <div class="py-4 bg-blue-50 p-3 rounded-md">3</div>
+        </div>
+      </div>
+
+      <!-- 
+        self-center:
+        Kapsayıcının align-items özelliğinin değerine göre hedef öğeyi merkezine (ortasına) hizasına hizalamak için kullanılır.
+    -->
+      <div class="border-2 border-blue-300 rounded-md p-5">
+        <div class="bg-blue-400 text-white rounded-md p-2 mb-5">
+          Self Center
+        </div>
+        <div class="flex gap-2 h-32 items-stretch">
+          <div class="py-4 bg-blue-50 p-3 rounded-md">1</div>
+          <div class="self-center py-4 bg-blue-50 p-3 rounded-md">2</div>
+          <div class="py-4 bg-blue-50 p-3 rounded-md">3</div>
+        </div>
+      </div>
+
+      <!-- 
+        self-end:
+        Kapsayıcının align-items özelliğinin değerine göre hedef öğeyi bitişine (sonuna) hizasına hizalamak için kullanılır.
+    -->
+      <div class="border-2 border-blue-300 rounded-md p-5">
+        <div class="bg-blue-400 text-white rounded-md p-2 mb-5">Self End</div>
+        <div class="flex gap-2 h-32 items-stretch">
+          <div class="py-4 bg-blue-50 p-3 rounded-md">1</div>
+          <div class="self-end py-4 bg-blue-50 p-3 rounded-md">2</div>
+          <div class="py-4 bg-blue-50 p-3 rounded-md">3</div>
+        </div>
+      </div>
+
+      <!-- 
+        self-stretch:
+        Kapsayıcının align-items özelliğinin değerine göre hedef öğeyi esneterek (tamamına) hizasına hizalamak için kullanılır.
+    -->
+      <div class="border-2 border-blue-300 rounded-md p-5">
+        <div class="bg-blue-400 text-white rounded-md p-2 mb-5">
+          Self Stretch
+        </div>
+        <div class="flex gap-2 h-32 items-center">
+          <div class="py-4 bg-blue-50 p-3 rounded-md">1</div>
+          <div class="self-stretch py-4 bg-blue-50 p-3 rounded-md">2</div>
+          <div class="py-4 bg-blue-50 p-3 rounded-md">3</div>
+        </div>
+      </div>
+
+      <!--
+        Flexbox modelinde yer alan öğelerin yatay düzlemde nasıl dağıtılacağını ve hizalanacağını kontrol etmek için kullanılır.
+      -->
+      <div class="bg-blue-500 text-white p-3 rounded-md text-xl text-center">
+        Justify Content
+      </div>
+
+      <!--
+        justify-start:
+        Öğeleri yatay yönde konteynerin başlangıcına hizalar.
+      -->
+      <div class="border-2 border-blue-300 rounded-md p-5">
+        <div class="bg-blue-400 text-white rounded-md p-2 mb-5">
+          Justify Start
+        </div>
+        <div class="flex gap-2 h-32 justify-start">
+          <div class="py-4 bg-blue-50 p-3 rounded-md">1</div>
+          <div class="py-4 bg-blue-50 p-3 rounded-md">2</div>
+          <div class="py-4 bg-blue-50 p-3 rounded-md">3</div>
+        </div>
+      </div>
+
+      <!--
+        justify-center: 
+        Öğeleri yatay yönde konteynerin ortasına hizalar.
+      -->
+      <div class="border-2 border-blue-300 rounded-md p-5">
+        <div class="bg-blue-400 text-white rounded-md p-2 mb-5">
+          Justify Center
+        </div>
+        <div class="flex gap-2 h-32 justify-center">
+          <div class="py-4 bg-blue-50 p-3 rounded-md">1</div>
+          <div class="py-4 bg-blue-50 p-3 rounded-md">2</div>
+          <div class="py-4 bg-blue-50 p-3 rounded-md">3</div>
+        </div>
+      </div>
+
+      <!--
+        justify-end:
+        Öğeleri yatay yönde konteynerin sonuna hizalar.
+      -->
+      <div class="border-2 border-blue-300 rounded-md p-5">
+        <div class="bg-blue-400 text-white rounded-md p-2 mb-5">
+          Justify End
+        </div>
+        <div class="flex gap-2 h-32 justify-end">
+          <div class="py-4 bg-blue-50 p-3 rounded-md">1</div>
+          <div class="py-4 bg-blue-50 p-3 rounded-md">2</div>
+          <div class="py-4 bg-blue-50 p-3 rounded-md">3</div>
+        </div>
+      </div>
+
+      <!--
+        justify-between:
+        Öğeleri yatay yönde konteynerin içinde eşit aralıklarla dağıtır. İlk öğe konteynerin başlangıcına, son öğe konteynerin sonuna hizalanır.
+      -->
+      <div class="border-2 border-blue-300 rounded-md p-5">
+        <div class="bg-blue-400 text-white rounded-md p-2 mb-5">
+          Space Between
+        </div>
+        <div class="flex gap-2 h-32 justify-between">
+          <div class="py-4 bg-blue-50 p-3 rounded-md">1</div>
+          <div class="py-4 bg-blue-50 p-3 rounded-md">2</div>
+          <div class="py-4 bg-blue-50 p-3 rounded-md">3</div>
+        </div>
+      </div>
+
+      <!--
+        justify-around:
+        Öğeleri yatay yönde konteynerin içinde ve çevresinde eşit aralıklarla dağıtır. Öğelerin çevresinde boşluklar oluşturur.
+      -->
+      <div class="border-2 border-blue-300 rounded-md p-5">
+        <div class="bg-blue-400 text-white rounded-md p-2 mb-5">
+          Space Around
+        </div>
+        <div class="flex gap-2 h-32 justify-around">
+          <div class="py-4 bg-blue-50 p-3 rounded-md">1</div>
+          <div class="py-4 bg-blue-50 p-3 rounded-md">2</div>
+          <div class="py-4 bg-blue-50 p-3 rounded-md">3</div>
+        </div>
+      </div>
+
+      <!--
+        justify-evenly:
+        Öğeleri yatay yönde konteynerin içinde ve çevresinde eşit aralıklarla dağıtır. Hem öğeler arasında hem de öğelerin çevresinde boşluklar oluşturur.
+      -->
+      <div class="border-2 border-blue-300 rounded-md p-5">
+        <div class="bg-blue-400 text-white rounded-md p-2 mb-5">
+          Space Evenly
+        </div>
+        <div class="flex gap-2 h-32 justify-evenly">
+          <div class="py-4 bg-blue-50 p-3 rounded-md">1</div>
+          <div class="py-4 bg-blue-50 p-3 rounded-md">2</div>
+          <div class="py-4 bg-blue-50 p-3 rounded-md">3</div>
+        </div>
+      </div>
+
+      <!--
+        CSS Grid Layout modelinde, justify-items özelliği, grid öğelerinin satır üzerinde yatay yönde nasıl hizalanacağını belirler.
+      -->
+      <div class="bg-blue-500 text-white p-3 rounded-md text-xl text-center">
+        Justify Items
+      </div>
+
+      <!--
+        justify-items-start:
+        Öğeleri satırda başlangıç konumuna hizalar.
+      -->
+      <div class="border-2 border-blue-300 rounded-md p-5">
+        <div class="bg-blue-400 text-white rounded-md p-2 mb-5">
+          Justify Items Start
+        </div>
+        <div class="h-56 grid grid-cols-3 gap-4 justify-items-start">
+          <div class="bg-blue-50 p-3 rounded-md">1</div>
+          <div class="bg-blue-50 p-3 rounded-md">2</div>
+          <div class="bg-blue-50 p-3 rounded-md">3</div>
+          <div class="bg-blue-50 p-3 rounded-md">4</div>
+          <div class="bg-blue-50 p-3 rounded-md">5</div>
+        </div>
+      </div>
+
+      <!--
+        justify-items-end:
+        Öğeleri satırda bitiş konumuna hizalar.
+      -->
+      <div class="border-2 border-blue-300 rounded-md p-5">
+        <div class="bg-blue-400 text-white rounded-md p-2 mb-5">
+          Justify Items End
+        </div>
+        <div class="h-56 grid grid-cols-3 gap-4 justify-items-end">
+          <div class="bg-blue-50 p-3 rounded-md">1</div>
+          <div class="bg-blue-50 p-3 rounded-md">2</div>
+          <div class="bg-blue-50 p-3 rounded-md">3</div>
+          <div class="bg-blue-50 p-3 rounded-md">4</div>
+          <div class="bg-blue-50 p-3 rounded-md">5</div>
+        </div>
+      </div>
+
+      <!--
+        justify-items-center:
+        Öğeleri satırda orta konumuna hizalar.
+      -->
+      <div class="border-2 border-blue-300 rounded-md p-5">
+        <div class="bg-blue-400 text-white rounded-md p-2 mb-5">
+          Justify Items Center
+        </div>
+        <div class="h-56 grid grid-cols-3 gap-4 justify-items-center">
+          <div class="bg-blue-50 p-3 rounded-md">1</div>
+          <div class="bg-blue-50 p-3 rounded-md">2</div>
+          <div class="bg-blue-50 p-3 rounded-md">3</div>
+          <div class="bg-blue-50 p-3 rounded-md">4</div>
+          <div class="bg-blue-50 p-3 rounded-md">5</div>
+        </div>
+      </div>
+
+      <!--
+        justify-items-stretch:
+        Öğeleri satırda uzatır.
+      -->
+      <div class="border-2 border-blue-300 rounded-md p-5">
+        <div class="bg-blue-400 text-white rounded-md p-2 mb-5">
+          Justify Items Stretch
+        </div>
+        <div class="h-56 grid grid-cols-3 gap-4 justify-items-stretch">
+          <div class="bg-blue-50 p-3 rounded-md">1</div>
+          <div class="bg-blue-50 p-3 rounded-md">2</div>
+          <div class="bg-blue-50 p-3 rounded-md">3</div>
+          <div class="bg-blue-50 p-3 rounded-md">4</div>
+          <div class="bg-blue-50 p-3 rounded-md">5</div>
+        </div>
+      </div>
+
+      <!--
+        CSS Grid Layout modelindeki bir grid öğesinin yatay (horizontal) hizalamasını belirler. 
+      -->
+      <div class="bg-blue-500 text-white p-3 rounded-md text-xl text-center">
+        Justify Self
+      </div>
+
+      <!--
+        justify-self-start:
+        Grid öğesini satır içinde başlangıç konumuna hizalar.
+      -->
+      <div class="border-2 border-blue-300 rounded-md p-5">
+        <div class="bg-blue-400 text-white rounded-md p-2 mb-5">
+          Justify Self Start
+        </div>
+        <div class="h-56 grid grid-cols-3 gap-4 justify-items-stretch">
+          <div class="bg-blue-50 p-3 rounded-md">1</div>
+          <div class="justify-self-start bg-blue-50 p-3 rounded-md">2</div>
+          <div class="bg-blue-50 p-3 rounded-md">3</div>
+          <div class="bg-blue-50 p-3 rounded-md">4</div>
+          <div class="bg-blue-50 p-3 rounded-md">5</div>
+        </div>
+      </div>
+
+      <!--
+        justify-self-end:
+         Grid öğesini satır içinde bitiş konumuna hizalar.
+      -->
+      <div class="border-2 border-blue-300 rounded-md p-5">
+        <div class="bg-blue-400 text-white rounded-md p-2 mb-5">
+          Justify Self End
+        </div>
+        <div class="h-56 grid grid-cols-3 gap-4 justify-items-stretch">
+          <div class="bg-blue-50 p-3 rounded-md">1</div>
+          <div class="justify-self-end bg-blue-50 p-3 rounded-md">2</div>
+          <div class="bg-blue-50 p-3 rounded-md">3</div>
+          <div class="bg-blue-50 p-3 rounded-md">4</div>
+          <div class="bg-blue-50 p-3 rounded-md">5</div>
+        </div>
+      </div>
+
+      <!--
+        justify-self-center:
+        Grid öğesini satır içinde orta konumuna hizalar.
+      -->
+      <div class="border-2 border-blue-300 rounded-md p-5">
+        <div class="bg-blue-400 text-white rounded-md p-2 mb-5">
+          Justify Self Center
+        </div>
+        <div class="h-56 grid grid-cols-3 gap-4 justify-items-stretch">
+          <div class="bg-blue-50 p-3 rounded-md">1</div>
+          <div class="justify-self-center bg-blue-50 p-3 rounded-md">2</div>
+          <div class="bg-blue-50 p-3 rounded-md">3</div>
+          <div class="bg-blue-50 p-3 rounded-md">4</div>
+          <div class="bg-blue-50 p-3 rounded-md">5</div>
+        </div>
+      </div>
+
+      <!--
+        justify-self-stretch:
+         Grid öğesini satır içinde uzatır.
+      -->
+      <div class="border-2 border-blue-300 rounded-md p-5">
+        <div class="bg-blue-400 text-white rounded-md p-2 mb-5">
+          Justify Self Stretch
+        </div>
+        <div class="h-56 grid grid-cols-3 gap-4 justify-items-start">
+          <div class="bg-blue-50 p-3 rounded-md">1</div>
+          <div class="justify-self-stretch bg-blue-50 p-3 rounded-md">2</div>
+          <div class="bg-blue-50 p-3 rounded-md">3</div>
+          <div class="bg-blue-50 p-3 rounded-md">4</div>
+          <div class="bg-blue-50 p-3 rounded-md">5</div>
+        </div>
+      </div>
+
+      <!--
+         CSS Grid Layout modelinde bir grid konteynerinin içindeki satırların dikey (vertical) yönde nasıl hizalanacağını belirler.
+      -->
+      <div class="bg-blue-500 text-white p-3 rounded-md text-xl text-center">
+        Align Content
+      </div>
+
+      <!--
+        content-start:
+        Satırları konteynerin başlangıcına hizalar.
+      -->
+      <div class="border-2 border-blue-300 rounded-md p-5">
+        <div class="bg-blue-400 text-white rounded-md p-2 mb-5">
+          Content Start
+        </div>
+        <div class="h-56 grid grid-cols-3 gap-4 content-start">
+          <div class="bg-blue-50 p-3 rounded-md">1</div>
+          <div class="bg-blue-50 p-3 rounded-md">2</div>
+          <div class="bg-blue-50 p-3 rounded-md">3</div>
+          <div class="bg-blue-50 p-3 rounded-md">4</div>
+          <div class="bg-blue-50 p-3 rounded-md">5</div>
+        </div>
+      </div>
+
+      <!--
+        content-end:
+        Satırları konteynerin sonuna hizalar.
+      -->
+      <div class="border-2 border-blue-300 rounded-md p-5">
+        <div class="bg-blue-400 text-white rounded-md p-2 mb-5">
+          Content End
+        </div>
+        <div class="h-56 grid grid-cols-3 gap-4 content-end">
+          <div class="bg-blue-50 p-3 rounded-md">1</div>
+          <div class="bg-blue-50 p-3 rounded-md">2</div>
+          <div class="bg-blue-50 p-3 rounded-md">3</div>
+          <div class="bg-blue-50 p-3 rounded-md">4</div>
+          <div class="bg-blue-50 p-3 rounded-md">5</div>
+        </div>
+      </div>
+
+      <!--
+        content-center:
+        Satırları konteynerin ortasına hizalar.
+      -->
+      <div class="border-2 border-blue-300 rounded-md p-5">
+        <div class="bg-blue-400 text-white rounded-md p-2 mb-5">
+          Content Center
+        </div>
+        <div class="h-56 grid grid-cols-3 gap-4 content-center">
+          <div class="bg-blue-50 p-3 rounded-md">1</div>
+          <div class="bg-blue-50 p-3 rounded-md">2</div>
+          <div class="bg-blue-50 p-3 rounded-md">3</div>
+          <div class="bg-blue-50 p-3 rounded-md">4</div>
+          <div class="bg-blue-50 p-3 rounded-md">5</div>
+        </div>
+      </div>
+
+      <!--
+        content-between:
+        Satırları konteyner içinde eşit aralıklarla dağıtır. İlk satır konteynerin başlangıcına, son satır konteynerin sonuna hizalanır.
+      -->
+      <div class="border-2 border-blue-300 rounded-md p-5">
+        <div class="bg-blue-400 text-white rounded-md p-2 mb-5">
+          Content Between
+        </div>
+        <div class="h-56 grid grid-cols-3 gap-4 content-between">
+          <div class="bg-blue-50 p-3 rounded-md">1</div>
+          <div class="bg-blue-50 p-3 rounded-md">2</div>
+          <div class="bg-blue-50 p-3 rounded-md">3</div>
+          <div class="bg-blue-50 p-3 rounded-md">4</div>
+          <div class="bg-blue-50 p-3 rounded-md">5</div>
+        </div>
+      </div>
+
+      <!--
+        content-around:
+        Satırları konteyner içinde ve etrafında eşit aralıklarla dağıtır.
+      -->
+      <div class="border-2 border-blue-300 rounded-md p-5">
+        <div class="bg-blue-400 text-white rounded-md p-2 mb-5">
+          Content Around
+        </div>
+        <div class="h-56 grid grid-cols-3 gap-4 content-around">
+          <div class="bg-blue-50 p-3 rounded-md">1</div>
+          <div class="bg-blue-50 p-3 rounded-md">2</div>
+          <div class="bg-blue-50 p-3 rounded-md">3</div>
+          <div class="bg-blue-50 p-3 rounded-md">4</div>
+          <div class="bg-blue-50 p-3 rounded-md">5</div>
+        </div>
+      </div>
+
+      <!--
+        content-evenly:
+        Satırları konteyner içinde ve etrafında eşit aralıklarla dağıtır. Tüm aralıklar eşit olarak dağılır.
+      -->
+      <div class="border-2 border-blue-300 rounded-md p-5">
+        <div class="bg-blue-400 text-white rounded-md p-2 mb-5">
+          Content Evenly
+        </div>
+        <div class="h-56 grid grid-cols-3 gap-4 content-evenly">
+          <div class="bg-blue-50 p-3 rounded-md">1</div>
+          <div class="bg-blue-50 p-3 rounded-md">2</div>
+          <div class="bg-blue-50 p-3 rounded-md">3</div>
+          <div class="bg-blue-50 p-3 rounded-md">4</div>
+          <div class="bg-blue-50 p-3 rounded-md">5</div>
+        </div>
+      </div>
+
+      <!--
+        content-stretch:
+        Satırları konteynerin yüksekliği boyunca gererek doldurur.
+      -->
+      <div class="border-2 border-blue-300 rounded-md p-5">
+        <div class="bg-blue-400 text-white rounded-md p-2 mb-5">
+          Content Stretch
+        </div>
+        <div class="h-56 grid grid-cols-3 gap-4 content-stretch">
+          <div class="bg-blue-50 p-3 rounded-md">1</div>
+          <div class="bg-blue-50 p-3 rounded-md">2</div>
+          <div class="bg-blue-50 p-3 rounded-md">3</div>
+          <div class="bg-blue-50 p-3 rounded-md">4</div>
+          <div class="bg-blue-50 p-3 rounded-md">5</div>
+        </div>
+      </div>
+
+      <!--
+        CSS Grid Layout modelinde bir grid konteynerindeki öğelerin hem yatay (horizontal) hem de dikey (vertical) hizalamasını aynı anda kontrol etmek için kullanılır.
+      -->
+      <div class="bg-blue-500 text-white p-3 rounded-md text-xl text-center">
+        Place Content
+      </div>
+
+      <!--
+        place-content-center:
+        Grid öğelerini satır ve sütunlarda orta konuma hizalar.
+      -->
+      <div class="border-2 border-blue-300 rounded-md p-5">
+        <div class="bg-blue-400 text-white rounded-md p-2 mb-5">
+          Place Content Center
+        </div>
+        <div
+          class="h-56 grid grid-cols-2 gap-4 place-content-center text-center">
+          <div class="bg-blue-50 w-full rounded-md">1</div>
+          <div class="bg-blue-50 w-full rounded-md">2</div>
+          <div class="bg-blue-50 w-full rounded-md">3</div>
+          <div class="bg-blue-50 w-full rounded-md">4</div>
+        </div>
+      </div>
+
+      <!--
+        place-content-start:
+        Öğeleri satır ve sütunlarda başlangıç konumuna hizalar.
+      -->
+      <div class="border-2 border-blue-300 rounded-md p-5">
+        <div class="bg-blue-400 text-white rounded-md p-2 mb-5">
+          Place Content Start
+        </div>
+        <div
+          class="h-56 grid grid-cols-2 gap-4 place-content-start text-center">
+          <div class="bg-blue-50 w-full rounded-md">1</div>
+          <div class="bg-blue-50 w-full rounded-md">2</div>
+          <div class="bg-blue-50 w-full rounded-md">3</div>
+          <div class="bg-blue-50 w-full rounded-md">4</div>
+        </div>
+      </div>
+
+      <!--
+        place-content-end:
+        Öğeleri satır ve sütunlarda bitiş konumuna hizalar.
+      -->
+      <div class="border-2 border-blue-300 rounded-md p-5">
+        <div class="bg-blue-400 text-white rounded-md p-2 mb-5">
+          Place Content End
+        </div>
+        <div class="h-56 grid grid-cols-2 gap-4 place-content-end text-center">
+          <div class="bg-blue-50 w-full rounded-md">1</div>
+          <div class="bg-blue-50 w-full rounded-md">2</div>
+          <div class="bg-blue-50 w-full rounded-md">3</div>
+          <div class="bg-blue-50 w-full rounded-md">4</div>
+        </div>
+      </div>
+
+      <!--
+        place-content-between:
+        Öğeleri satır ve sütunlarda aralarında eşit boşluk bırakarak dağıtır. İlk ve son öğeler konteynerin başlangıcına ve sonuna hizalanır.
+      -->
+      <div class="border-2 border-blue-300 rounded-md p-5">
+        <div class="bg-blue-400 text-white rounded-md p-2 mb-5">
+          Place Content Between
+        </div>
+        <div
+          class="h-56 grid grid-cols-2 gap-4 place-content-between text-center">
+          <div class="bg-blue-50 w-full rounded-md">1</div>
+          <div class="bg-blue-50 w-full rounded-md">2</div>
+          <div class="bg-blue-50 w-full rounded-md">3</div>
+          <div class="bg-blue-50 w-full rounded-md">4</div>
+        </div>
+      </div>
+
+      <!--
+        place-content-around:
+        Öğeleri satır ve sütunlarda hem aralarında hem de çevrelerinde eşit boşluklar bırakarak dağıtır.
+      -->
+      <div class="border-2 border-blue-300 rounded-md p-5">
+        <div class="bg-blue-400 text-white rounded-md p-2 mb-5">
+          Place Content Around
+        </div>
+        <div
+          class="h-56 grid grid-cols-2 gap-4 place-content-around text-center">
+          <div class="bg-blue-50 w-full rounded-md">1</div>
+          <div class="bg-blue-50 w-full rounded-md">2</div>
+          <div class="bg-blue-50 w-full rounded-md">3</div>
+          <div class="bg-blue-50 w-full rounded-md">4</div>
+        </div>
+      </div>
+
+      <!--
+        place-content-evenly:
+        Öğeleri satır ve sütunlarda hem aralarında hem de çevrelerinde eşit boşluklar bırakarak dağıtır. Tüm boşluklar eşit olarak dağılır.
+      -->
+      <div class="border-2 border-blue-300 rounded-md p-5">
+        <div class="bg-blue-400 text-white rounded-md p-2 mb-5">
+          Place Content Evenly
+        </div>
+        <div
+          class="h-56 grid grid-cols-2 gap-4 place-content-evenly text-center">
+          <div class="bg-blue-50 w-full rounded-md">1</div>
+          <div class="bg-blue-50 w-full rounded-md">2</div>
+          <div class="bg-blue-50 w-full rounded-md">3</div>
+          <div class="bg-blue-50 w-full rounded-md">4</div>
+        </div>
+      </div>
+
+      <!--
+        place-content-stretch:
+        Öğeleri satır ve sütunlarda gererek tam genişlik ve yükseklikte yerleştirir.
+      -->
+      <div class="border-2 border-blue-300 rounded-md p-5">
+        <div class="bg-blue-400 text-white rounded-md p-2 mb-5">
+          Place Content Stretch
+        </div>
+        <div
+          class="h-56 grid grid-cols-2 gap-4 place-content-stretch text-center">
+          <div class="bg-blue-50 w-full rounded-md">1</div>
+          <div class="bg-blue-50 w-full rounded-md">2</div>
+          <div class="bg-blue-50 w-full rounded-md">3</div>
+          <div class="bg-blue-50 w-full rounded-md">4</div>
+        </div>
+      </div>
+
+      <!--
+        CSS Grid Layout modelinde bir grid konteynerindeki öğelerin hem yatay (horizontal) hem de dikey (vertical) hizalamasını aynı anda kontrol etmek için kullanılır. Bu özellik, align-items ve justify-items özelliklerini bir arada kullanmak için kısa bir yol sağlar.
+      -->
+      <div class="bg-blue-500 text-white p-3 rounded-md text-xl text-center">
+        Place Items
+      </div>
+
+      <!--
+        place-item-start:
+        Öğeleri satır ve sütunlarda başlangıç konuma hizalar.
+      -->
+      <div class="border-2 border-blue-300 rounded-md p-5">
+        <div class="bg-blue-400 text-white rounded-md p-2 mb-5">
+          Place Item Start
+        </div>
+        <div class="h-56 grid grid-cols-2 gap-4 place-items-start text-center">
+          <div class="bg-blue-50 h-20 w-20 rounded-md">1</div>
+          <div class="bg-blue-50 h-20 w-20 rounded-md">2</div>
+          <div class="bg-blue-50 h-20 w-20 rounded-md">3</div>
+          <div class="bg-blue-50 h-20 w-20 rounded-md">4</div>
+        </div>
+      </div>
+
+      <!--
+        place-item-end:
+        Öğeleri satır ve sütunlarda bitiş konuma hizalar.
+      -->
+      <div class="border-2 border-blue-300 rounded-md p-5">
+        <div class="bg-blue-400 text-white rounded-md p-2 mb-5">
+          Place Item End
+        </div>
+        <div class="h-56 grid grid-cols-2 gap-4 place-items-end text-center">
+          <div class="bg-blue-50 h-20 w-20 rounded-md">1</div>
+          <div class="bg-blue-50 h-20 w-20 rounded-md">2</div>
+          <div class="bg-blue-50 h-20 w-20 rounded-md">3</div>
+          <div class="bg-blue-50 h-20 w-20 rounded-md">4</div>
+        </div>
+      </div>
+
+      <!--
+        place-item-center:
+        Öğeleri satır ve sütunlarda orta konuma hizalar.
+      -->
+      <div class="border-2 border-blue-300 rounded-md p-5">
+        <div class="bg-blue-400 text-white rounded-md p-2 mb-5">
+          Place Item Center
+        </div>
+        <div class="h-56 grid grid-cols-2 gap-4 place-items-center text-center">
+          <div class="bg-blue-50 h-20 w-20 rounded-md">1</div>
+          <div class="bg-blue-50 h-20 w-20 rounded-md">2</div>
+          <div class="bg-blue-50 h-20 w-20 rounded-md">3</div>
+          <div class="bg-blue-50 h-20 w-20 rounded-md">4</div>
+        </div>
+      </div>
+
+      <!--
+        place-item-stretch:
+        Öğeleri satır ve sütunlarda gererek tam genişlik ve yükseklikte yerleştirir.
+      -->
+      <div class="border-2 border-blue-300 rounded-md p-5">
+        <div class="bg-blue-400 text-white rounded-md p-2 mb-5">
+          Place Item Stretch
+        </div>
+        <div
+          class="h-56 grid grid-cols-2 gap-4 place-items-stretch text-center">
+          <div class="bg-blue-50 h-20 w-20 rounded-md">1</div>
+          <div class="bg-blue-50 h-20 w-20 rounded-md">2</div>
+          <div class="bg-blue-50 h-20 w-20 rounded-md">3</div>
+          <div class="bg-blue-50 h-20 w-20 rounded-md">4</div>
+        </div>
+      </div>
+
+      <!--
+         CSS Grid Layout modelinde bir grid öğesinin hem yatay (horizontal) hem de dikey (vertical) hizalamasını belirler. Bu özellik, align-self ve justify-self özelliklerini bir arada kullanmak için kısa bir yol sağlar.
+      -->
+      <div class="bg-blue-500 text-white p-3 rounded-md text-xl text-center">
+        Place Self
+      </div>
+
+      <!--
+        place-self-start:
+        Öğeyi hem yatayda hem de dikeyde başlangıç konumuna hizalar.
+      -->
+      <div class="border-2 border-blue-300 rounded-md p-5">
+        <div class="bg-blue-400 text-white rounded-md p-2 mb-5">
+          Place Self Start
+        </div>
+        <div class="h-56 grid grid-cols-3 gap-4">
+          <div class="bg-blue-50 p-3 rounded-md">1</div>
+          <div class="place-self-start bg-blue-50 p-3 rounded-md">2</div>
+          <div class="bg-blue-50 p-3 rounded-md">3</div>
+          <div class="bg-blue-50 p-3 rounded-md">4</div>
+          <div class="bg-blue-50 p-3 rounded-md">5</div>
+        </div>
+      </div>
+
+      <!--
+        place-self-end:
+        Öğeyi hem yatayda hem de dikeyde bitiş konumuna hizalar.
+      -->
+      <div class="border-2 border-blue-300 rounded-md p-5">
+        <div class="bg-blue-400 text-white rounded-md p-2 mb-5">
+          Place Self End
+        </div>
+        <div class="h-56 grid grid-cols-3 gap-4">
+          <div class="bg-blue-50 p-3 rounded-md">1</div>
+          <div class="place-self-end bg-blue-50 p-3 rounded-md">2</div>
+          <div class="bg-blue-50 p-3 rounded-md">3</div>
+          <div class="bg-blue-50 p-3 rounded-md">4</div>
+          <div class="bg-blue-50 p-3 rounded-md">5</div>
+        </div>
+      </div>
+
+      <!--
+        place-self-center:
+        Öğeyi hem yatayda hem de dikeyde orta konumuna hizalar.
+      -->
+      <div class="border-2 border-blue-300 rounded-md p-5">
+        <div class="bg-blue-400 text-white rounded-md p-2 mb-5">
+          Place Self Center
+        </div>
+        <div class="h-56 grid grid-cols-3 gap-4">
+          <div class="bg-blue-50 p-3 rounded-md">1</div>
+          <div class="place-self-center bg-blue-50 p-3 rounded-md">2</div>
+          <div class="bg-blue-50 p-3 rounded-md">3</div>
+          <div class="bg-blue-50 p-3 rounded-md">4</div>
+          <div class="bg-blue-50 p-3 rounded-md">5</div>
+        </div>
+      </div>
+
+      <!--
+        place-self-stretch:
+        Öğeyi hem yatayda hem de dikeyde gererek tam genişlik ve yükseklikte yerleştirir.
+      -->
+      <div class="border-2 border-blue-300 rounded-md p-5">
+        <div class="bg-blue-400 text-white rounded-md p-2 mb-5">
+          Place Self Stretch
+        </div>
+        <div class="h-56 grid grid-cols-3 gap-4 place-items-center">
+          <div class="bg-blue-50 p-3 rounded-md">1</div>
+          <div class="place-self-stretch bg-blue-50 p-3 rounded-md">2</div>
+          <div class="bg-blue-50 p-3 rounded-md">3</div>
+          <div class="bg-blue-50 p-3 rounded-md">4</div>
+          <div class="bg-blue-50 p-3 rounded-md">5</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

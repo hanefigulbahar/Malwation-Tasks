@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="flex flex-col gap-10 p-10 m-3 border shadow-md rounded-3xl">
+      <!-- 
+        Grid, düzen oluşturmak için güçlü bir araçtır. CSS Grid, 2 boyutlu düzenler oluşturmak için kullanılır. Grid, bir sayfayı veya bir bileşeni satırlar ve sütunlar oluşturarak bölmenize ve içerikleri bu hücrelere yerleştirmenize olanak tanır. Grid, öncelikle bir container (kapsayıcı) ve onun içindeki item'lar (öğeler) arasında ilişkiler kurarak çalışır. 
+    -->
+      <h1 class="text-2xl text-center">GRID</h1>
+      <!--
+        Bir ızgara düzenindeki sütunları belirtmek için kullanılır.
+    -->
+      <div class="border shadow-lg rounded-xl p-2">
+        <h1 class="text-2xl my-2 underline underline-offset-8 py-2">
+          Grid Col Template
+        </h1>
+        <!--Aşağıda kullanılan grid-cols-2 css de karşılığı grid-template-columns: repeat(2, minmax(0, 1fr))'dır. buradaki 
+            repeat(2, minmax(0, 1fr)): Bu ifade, grid'in sütunlarının tanımlanmasını sağlar. İki sütun tanımlanacaktır.
+
+            minmax(0, 1fr): Bu ifade, her sütunun minimum ve maksimum genişliğini belirler. 0 minimum genişlik değerini ve 1fr maksimum genişlik değerini temsil eder.-->
+        <div
+          class="grid grid-cols-2 gap-4 text-center border-2 border-blue-400 p-3 rounded-xl">
+          <div class="border-2 border-blue-300 rounded-md">01</div>
+          <div class="border-2 border-blue-300 rounded-md">02</div>
+          <div class="border-2 border-blue-300 rounded-md">03</div>
+          <div class="border-2 border-blue-300 rounded-md">04</div>
+          <div class="border-2 border-blue-300 rounded-md">05</div>
+          <div class="border-2 border-blue-300 rounded-md">06</div>
+          <div class="border-2 border-blue-300 rounded-md">07</div>
+          <div class="border-2 border-blue-300 rounded-md">08</div>
+          <div class="border-2 border-blue-300 rounded-md">09</div>
+        </div>
+      </div>
+      <!--  
+        Öğelerin nasıl boyutlandırılacağını ve ızgara sütunlarına nasıl yerleştirileceğini kontrol etmek için kullanılır.
+    -->
+      <div class="border shadow-lg rounded-xl p-2">
+        <h1 class="text-2xl my-2 underline underline-offset-8 py-2">
+          Grid Column Span
+        </h1>
+        <!-- -->
+        <div
+          class="grid grid-cols-3 gap-4 text-center border-2 border-blue-400 p-3 rounded-xl">
+          <div class="border-2 border-blue-300 rounded-md">01</div>
+          <div class="border-2 border-blue-300 rounded-md">02</div>
+          <div class="border-2 border-blue-300 rounded-md">03</div>
+          <div class="border-2 border-blue-300 rounded-md col-span-2">04</div>
+          <div class="border-2 border-blue-300 rounded-md">05</div>
+          <div class="border-2 border-blue-300 rounded-md">06</div>
+          <div class="border-2 border-blue-300 rounded-md">07</div>
+          <div class="border-2 border-blue-300 rounded-md">08</div>
+          <div class="border-2 border-blue-300 rounded-md col-span-3">09</div>
+        </div>
+      </div>
+
+      <div class="border shadow-lg rounded-xl p-2">
+        <h1 class="text-2xl my-2 underline underline-offset-8 py-2">
+          Grid Column Start / End
+        </h1>
+        <!-- -->
+        <div
+          class="grid grid-cols-6 gap-4 text-center border-2 border-blue-400 p-3 rounded-xl">
+          <div
+            class="border-2 border-blue-300 rounded-md col-start-2 col-end-5">
+            01
+          </div>
+          <div
+            class="border-2 border-blue-300 rounded-md col-start-1 col-end-3">
+            02
+          </div>
+          <div class="border-2 border-blue-300 rounded-md col-end-7 col-span-2">
+            03
+          </div>
+          <div
+            class="border-2 border-blue-300 rounded-md col-start-2 col-end-7">
+            04
+          </div>
+        </div>
+      </div>
+
+      <!--
+        Bir ızgara düzenindeki satırları belirtmek için kullanılır.
+    -->
+      <div class="border shadow-lg rounded-xl p-2">
+        <h1 class="text-2xl my-2 underline underline-offset-8 py-2">
+          Grid Row Template
+        </h1>
+        <!--
+            Aşağıda kullanılan grid-rows-2 css de karşılığı grid-template-rows: repeat(2, minmax(0, 1fr))'dır. buradaki 
+            repeat(2, minmax(0, 1fr)): Bu ifade, grid'in sütunlarının tanımlanmasını sağlar. İki sütun tanımlanacaktır.
+
+            minmax(0, 1fr): Bu ifade, her sütunun minimum ve maksimum genişliğini belirler. 0 minimum genişlik değerini ve 1fr maksimum genişlik değerini temsil eder.
+
+            grid-flow-col, grid item'larını yatay sütun tabanlı olarak yerleştirmek için kullanışlıdır. Bu sayede, item'lar yatay olarak sıralanır ve konteynerin genişliği içinde bir sütun akışı oluştururlar.
+        -->
+        <div
+          class="grid grid-rows-2 grid-flow-col gap-4 text-center border-2 border-blue-400 p-3 rounded-xl">
+          <div class="border-2 border-blue-300 rounded-md">01</div>
+          <div class="border-2 border-blue-300 rounded-md">02</div>
+          <div class="border-2 border-blue-300 rounded-md">03</div>
+          <div class="border-2 border-blue-300 rounded-md">04</div>
+          <div class="border-2 border-blue-300 rounded-md">05</div>
+          <div class="border-2 border-blue-300 rounded-md">06</div>
+          <div class="border-2 border-blue-300 rounded-md">07</div>
+          <div class="border-2 border-blue-300 rounded-md">08</div>
+          <div class="border-2 border-blue-300 rounded-md">09</div>
+        </div>
+      </div>
+
+      <!--  
+        Öğelerin nasıl boyutlandırılacağını ve ızgara satırlarına nasıl yerleştirileceğini kontrol etmek için kullanılır.
+    -->
+      <div class="border shadow-lg rounded-xl p-2">
+        <h1 class="text-2xl my-2 underline underline-offset-8 py-2">
+          Grid Row Span
+        </h1>
+        <div
+          class="grid grid-rows-6 grid-flow-col gap-4 text-center border-2 border-blue-400 p-3 rounded-xl">
+          <div class="border-2 border-blue-300 rounded-md">01</div>
+          <div class="border-2 border-blue-300 rounded-md">02</div>
+          <div class="border-2 border-blue-300 rounded-md row-span-3">03</div>
+          <div class="border-2 border-blue-300 rounded-md">04</div>
+          <div class="border-2 border-blue-300 rounded-md row-span-5">05</div>
+          <div class="border-2 border-blue-300 rounded-md">06</div>
+          <div class="border-2 border-blue-300 rounded-md">07</div>
+          <div class="border-2 border-blue-300 rounded-md">08</div>
+          <div class="border-2 border-blue-300 rounded-md row-span-4">09</div>
+        </div>
+      </div>
+
+      <div class="border shadow-lg rounded-xl p-2">
+        <h1 class="text-2xl my-2 underline underline-offset-8 py-2">
+          Grid Row Start / End
+        </h1>
+        <div
+          class="grid grid-rows-6 grid-flow-col gap-4 text-center border-2 border-blue-400 p-3 rounded-xl">
+          <div class="border-2 border-blue-300 rounded-md">01</div>
+          <div class="border-2 border-blue-300 rounded-md">02</div>
+          <div
+            class="border-2 border-blue-300 rounded-md row-start-3 row-end-6">
+            03
+          </div>
+          <div class="border-2 border-blue-300 rounded-md">04</div>
+          <div
+            class="border-2 border-blue-300 rounded-md row-start-1 row-end-6">
+            05
+          </div>
+          <div class="border-2 border-blue-300 rounded-md">06</div>
+          <div class="border-2 border-blue-300 rounded-md">07</div>
+          <div class="border-2 border-blue-300 rounded-md">08</div>
+          <div
+            class="border-2 border-blue-300 rounded-md row-start-3 row-end-7">
+            09
+          </div>
+        </div>
+      </div>
+      <!-- 
+         CSS Grid Layout'ta kullanılan bir özelliktir ve grid container içindeki grid item'ların (öğelerin) nasıl akışını belirlemek için kullanılır. Bu özellik, yeni eklenen item'ların nasıl konumlandırılacağını ve düzenleneceğini kontrol etmenizi sağlar.
+
+        row: Yeni grid item'larını bir sonraki satıra ekler. Yani, her yeni item bir sonraki satıra geçer.
+        column: Yeni grid item'larını bir sonraki sütuna ekler. Yani, her yeni item bir sonraki sütuna geçer.
+        dense: Yeni grid item'larını uygun boşlukları doldurarak yerleştirir. Bu değer, grid item'larının düzensiz bir şekilde yerleştirilmesini sağlar ve boş alanları en iyi şekilde değerlendirir.
+-->
+      <div class="flex flex-col gap-5 border shadow-lg rounded-xl p-2">
+        <h1 class="text-2xl my-2 underline underline-offset-8 py-2">
+          Grid Auto Flow
+        </h1>
+
+        <div
+          class="grid grid-rows-2 grid-flow-col gap-4 text-center border-2 border-blue-400 p-3 rounded-xl">
+          <div class="border-2 border-blue-300 col-span-2 rounded-md">01</div>
+          <div class="border-2 border-blue-300 row-span-2 rounded-md">02</div>
+          <div class="border-2 border-blue-300 rounded-md">03</div>
+          <div class="border-2 border-blue-300 rounded-md">04</div>
+          <div class="border-2 border-blue-300 rounded-md">05</div>
+          <div class="border-2 border-blue-300 rounded-md">06</div>
+          <div class="border-2 border-blue-300 rounded-md">07</div>
+          <div class="border-2 border-blue-300 rounded-md">08</div>
+          <div class="border-2 border-blue-300 rounded-md">09</div>
+        </div>
+
+        <div
+          class="grid grid-cols-5 grid-flow-row gap-4 text-center border-2 border-blue-400 p-3 rounded-xl">
+          <div class="border-2 border-blue-300 col-span-3 rounded-md">01</div>
+          <div class="border-2 border-blue-300 row-span-3 rounded-md">02</div>
+          <div class="border-2 border-blue-300 rounded-md">03</div>
+          <div class="border-2 border-blue-300 rounded-md">04</div>
+          <div class="border-2 border-blue-300 rounded-md">05</div>
+          <div class="border-2 border-blue-300 rounded-md">06</div>
+          <div class="border-2 border-blue-300 rounded-md">07</div>
+          <div class="border-2 border-blue-300 rounded-md">08</div>
+          <div class="border-2 border-blue-300 rounded-md">09</div>
+        </div>
+      </div>
+      <!--  Grid Auto Columns otomatik olarak oluşturulduğunda veya ekstra hücrelere yayıldığında oluşturulan sütunların genişliğini belirlemek için kullanılır. Yani itemlerin belirli bir boyuta sabitlemesinde kullanılabilir.-->
+      <div class="flex flex-col gap-5 border shadow-lg rounded-xl p-2">
+        <h1 class="text-2xl my-2 underline underline-offset-8 py-2">
+          Grid Auto Columns
+        </h1>
+        <div
+          class="grid gap-4 grid-cols-2 grid-rows-2 grid-flow-col auto-cols-auto text-center border-2 border-blue-400 p-3 rounded-xl">
+          <div class="border-2 border-blue-300 rounded-md">
+            Lorem ipsum dolor sit amet consectetur adipisicing.
+          </div>
+          <div class="border-2 border-blue-300 rounded-md">
+            Lorem ipsum dolor sit amet.
+          </div>
+          <div class="border-2 border-blue-300 rounded-md">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam,
+            assumenda.
+          </div>
+          <div class="border-2 border-blue-300 rounded-md">
+            Lorem, ipsum dolor.
+          </div>
+          <div class="border-2 border-blue-300 rounded-md">
+            Lorem, ipsum dolor.
+          </div>
+          <div class="border-2 border-blue-300 rounded-md">
+            Lorem ipsum dolor sit amet consectetur.
+          </div>
+        </div>
+        <div
+          class="grid gap-4 grid-cols-2 grid-rows-2 grid-flow-col auto-cols-min text-center border-2 border-blue-400 p-3 rounded-xl">
+          <div class="border-2 border-blue-300 rounded-md">
+            Lorem ipsum dolor sit amet consectetur adipisicing.
+          </div>
+          <div class="border-2 border-blue-300 rounded-md">
+            Lorem ipsum dolor sit amet.
+          </div>
+          <div class="border-2 border-blue-300 rounded-md">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam,
+            assumenda.
+          </div>
+          <div class="border-2 border-blue-300 rounded-md">
+            Lorem, ipsum dolor.
+          </div>
+          <div class="border-2 border-blue-300 rounded-md">
+            Lorem, ipsum dolor.
+          </div>
+          <div class="border-2 border-blue-300 rounded-md">
+            Lorem ipsum dolor sit amet consectetur.
+          </div>
+        </div>
+        <div
+          class="grid gap-4 grid-cols-2 grid-rows-2 grid-flow-col auto-cols-max text-center border-2 border-blue-400 p-3 rounded-xl">
+          <div class="border-2 border-blue-300 rounded-md">
+            Lorem ipsum dolor sit amet consectetur adipisicing.
+          </div>
+          <div class="border-2 border-blue-300 rounded-md">
+            Lorem ipsum dolor sit amet.
+          </div>
+          <div class="border-2 border-blue-300 rounded-md">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam,
+            assumenda.
+          </div>
+          <div class="border-2 border-blue-300 rounded-md">
+            Lorem, ipsum dolor.
+          </div>
+          <div class="border-2 border-blue-300 rounded-md">
+            Lorem, ipsum dolor.
+          </div>
+          <div class="border-2 border-blue-300 rounded-md">
+            Lorem ipsum dolor sit amet consectetur.
+          </div>
+        </div>
+        <div
+          class="grid gap-4 grid-cols-2 grid-rows-2 grid-flow-col auto-cols-fr text-center border-2 border-blue-400 p-3 rounded-xl">
+          <div class="border-2 border-blue-300 rounded-md">
+            Lorem ipsum dolor sit amet consectetur adipisicing.
+          </div>
+          <div class="border-2 border-blue-300 rounded-md">
+            Lorem ipsum dolor sit amet.
+          </div>
+          <div class="border-2 border-blue-300 rounded-md">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam,
+            assumenda.
+          </div>
+          <div class="border-2 border-blue-300 rounded-md">
+            Lorem, ipsum dolor.
+          </div>
+          <div class="border-2 border-blue-300 rounded-md">
+            Lorem, ipsum dolor.
+          </div>
+          <div class="border-2 border-blue-300 rounded-md">
+            Lorem ipsum dolor sit amet consectetur.
+          </div>
+        </div>
+      </div>
+      <!--  Gap, grid item'lar (öğeler) veya flex item'lar arasındaki boşluğu belirlemek için kullanılır..-->
+      <div class="border shadow-lg rounded-xl p-2">
+        <h1 class="text-2xl my-2 underline underline-offset-8 py-2">
+          Grid Auto Rows
+        </h1>
+        <div
+          class="grid gap-4 grid-cols-2 grid-flow-row auto-rows-auto text-center border-2 border-blue-400 p-3 rounded-xl">
+          <div class="border-2 border-blue-300 rounded-md">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore
+            fuga beatae explicabo ipsum aut! Facilis ratione placeat quisquam
+            illo dicta dignissimos? Rerum excepturi, ut nihil laboriosam est
+            non. Dolores, explicabo!
+          </div>
+          <div class="border-2 border-blue-300 rounded-md">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quam
+            alias, quaerat corrupti ad nihil vitae aperiam! Ex, eveniet numquam
+            illum deleniti reiciendis doloribus nam, voluptatem laborum ratione,
+            praesentium tempora!
+          </div>
+          <div class="border-2 border-blue-300 rounded-md">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Distinctio, ex alias eius modi possimus nobis sequi nihil,
+          </div>
+          <div class="border-2 border-blue-300 rounded-md">
+            Lorem ipsum dolor sit amet consecte
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-5 border shadow-lg rounded-xl p-2">
+        <h1 class="text-2xl my-2 underline underline-offset-8 py-2">Gap</h1>
+        <!--Aşağıda kullanılan gap-x-10 yatay olarak 40px boşlul bırakır.-->
+        <div
+          class="grid grid-cols-2 gap-x-10 text-center border-2 border-blue-400 p-3 rounded-xl">
+          <div class="border-2 border-blue-300 rounded-md">01</div>
+          <div class="border-2 border-blue-300 rounded-md">02</div>
+          <div class="border-2 border-blue-300 rounded-md">03</div>
+          <div class="border-2 border-blue-300 rounded-md">04</div>
+          <div class="border-2 border-blue-300 rounded-md">05</div>
+          <div class="border-2 border-blue-300 rounded-md">06</div>
+          <div class="border-2 border-blue-300 rounded-md">07</div>
+          <div class="border-2 border-blue-300 rounded-md">08</div>
+          <div class="border-2 border-blue-300 rounded-md">09</div>
+        </div>
+
+        <!--Aşağıda kullanılan gap-x-10 dikey olarak 40px boşlul bırakır.-->
+        <div
+          class="grid grid-cols-2 gap-y-10 text-center border-2 border-blue-400 p-3 rounded-xl">
+          <div class="border-2 border-blue-300 rounded-md">01</div>
+          <div class="border-2 border-blue-300 rounded-md">02</div>
+          <div class="border-2 border-blue-300 rounded-md">03</div>
+          <div class="border-2 border-blue-300 rounded-md">04</div>
+          <div class="border-2 border-blue-300 rounded-md">05</div>
+          <div class="border-2 border-blue-300 rounded-md">06</div>
+          <div class="border-2 border-blue-300 rounded-md">07</div>
+          <div class="border-2 border-blue-300 rounded-md">08</div>
+          <div class="border-2 border-blue-300 rounded-md">09</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

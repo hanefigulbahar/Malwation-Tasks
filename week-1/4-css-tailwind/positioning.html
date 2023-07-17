@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="flex flex-col gap-10 p-10 m-3 border shadow-md rounded-3xl">
+      <!--Positioning, CSS'de bir elementin yerleştirilme yöntemini belirlemek için kullanılan bir özelliktir. position özelliği, elementlerin sayfa içinde veya diğer elementlerle olan ilişkisini kontrol etmenizi sağlar.
+    -->
+      <h1 class="text-2xl text-center">Positioning</h1>
+      <!--
+        static: 
+        Bu, position özelliğinin varsayılan değeridir. Elementler normal akışta kalır ve top, right, bottom, left, ve z-index özellikleri etkisiz hale gelir.
+
+        absolute: Elementi normal akıştan çıkarır ve en yakın relative veya absolute pozisyona sahip üst öğeye göre konumlandırır. top, right, bottom, left özelliklerini kullanarak elementin yerini belirleyebilirsiniz. Diğer elementlerin konumuna etki etmezler, yer değiştirilen element normal akıştan çıkar ve diğer elementlerin üzerine çıkabilir.
+    -->
+      <div class="border-2 border-blue-300 rounded-xl p-2">
+        <h1 class="text-2xl my-2 underline underline-offset-8 py-3">Static</h1>
+        <div class="static border border-blue-200 bg-blue-200 rounded-md h-20">
+          <p>Static parent</p>
+          <div class="absolute top-64 left-12">
+            <p class="bg-blue-50 p-3 rounded-md">Static-Absolute child</p>
+          </div>
+        </div>
+      </div>
+
+      <!--relative: 
+        Elementi normal akışa göre konumlandırır, ancak top, right, bottom, left özelliklerini kullanarak elementin kendisini kaydırmanıza olanak sağlar. Diğer elementler normal akışta olduğu gibi konumlandırılırken, bu kayma nedeniyle yer değiştirilen element, normal akışta kalmaya devam eder.-->
+      <div class="border-2 border-blue-300 rounded-xl p-2">
+        <h1 class="text-2xl my-2 underline underline-offset-8 py-3">
+          Relative
+        </h1>
+        <div
+          class="relative border border-blue-200 bg-blue-200 rounded-md h-20">
+          <p>Static parent</p>
+          <div class="absolute bottom-0 right-0">
+            <p class="bg-blue-50 p-3 rounded-md">Relative-Absolute child</p>
+          </div>
+        </div>
+      </div>
+
+      <!--
+        fixed: 
+        Elementi normal akıştan çıkarır ve sayfa üzerinde sabit bir konuma yerleştirir. Sayfanın scroll edilmesi durumunda bile element sabit kalır. top, right, bottom, left özelliklerini kullanarak elementin konumunu belirleyebilirsiniz.
+    -->
+      <div class="border-2 border-blue-300 rounded-xl p-2">
+        <h1 class="text-2xl my-2 underline underline-offset-8 py-3">Fixed</h1>
+        <div
+          class="relative border border-blue-200 bg-blue-200 rounded-md h-20">
+          <p>Fixed parent</p>
+          <div class="fixed right-10 top-12">
+            <p class="bg-blue-50 p-3 rounded-md">Fixed child</p>
+          </div>
+        </div>
+      </div>
+
+      <!--sticky: 
+        Bu, position özelliğinin varsayılan değeridir. Elementler normal akışta kalır ve top, right, bottom, left, ve z-index özellikleri etkisiz hale gelir.
+    -->
+      <div class="border-2 border-blue-300 rounded-xl p-2">
+        <h1 class="text-2xl my-2 underline underline-offset-8 py-3">Sticky</h1>
+        <div
+          class="border border-blue-200 bg-blue-200 rounded-md overflow-y-auto h-96">
+          <div class="sticky top-0 left-0">
+            <p class="bg-blue-50 p-3 rounded-md">sticky element</p>
+          </div>
+          <div class="w-20">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati
+            quisquam culpa odit voluptatum quas soluta. Rerum, laboriosam hic.
+            Iure, eos ipsum vero et obcaecati praesentium ipsa doloribus
+            quaerat. Tenetur, officiis! Lorem ipsum dolor sit amet consectetur,
+            adipisicing elit. Ut eum praesentium neque sequi. Molestias,
+            doloremque unde nesciunt laudantium quibusdam tempore dolor quo illo
+            iure qui, a esse facere hic iste!
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
