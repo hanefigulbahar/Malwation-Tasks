@@ -7,14 +7,43 @@ JavaScript'te diziler ve nesnelerle çalışırken, işlevleri verimli bir şeki
 **1. İterasyon İçin `forEach()` Kullanma:**
 Dizi üzerinde döngü yapma ve her öğe üzerinde bir işlem gerçekleştirilmesi gerektiğinde kullanılabilir. Kısa ve anlaşılır bir yapıya sahiptir.
 
+```typescript
+const numbers = [1, 2, 3, 4, 5]:
+// Good practice: forEach() for iteration
+    numbers.forEach((num) => {
+    console.log(num) ;
+}):
+```
+
 **2. Dönüştürme İçin `map()` Kullanma:**
 Bir dizinin öğelerini dönüştürmek ve dönüştürülmüş değerlerle yeni bir dizi oluşturmak isteniyorsa kullanılabilir. Belirtilen işlevi her öğeye uygular ve dönüştürülmüş değerlerle yeni bir dizi döndürür.
+
+```typescript
+const numbers = [1, 2, 3, 4, 5];
+// Good practice: map() for transforming arrays
+const squaredNumbers = numbers.map((num) => num * num);
+console.log(squaredNumbers); // Output: [1, 4, 9, 16, 25]
+```
 
 **3. Filtreleme İçin `filter()` Kullanma:**
 Belirli bir koşulu sağlayan öğelerin bulunduğu yeni bir dizi oluşturmak istenildiğinde kullanılır. Her öğeye bir koşul uygular ve koşulu sağlayan öğelerden oluşan yeni bir dizi döndürür.
 
+```typescript
+const numbers = [1, 2, 3, 4, 5];
+// Good practice: filter() for filtering arrays
+const evenNumbers = numbers.filter((num) => num % 2 === 0):
+console.log (evenNumbers) ; // Output: [2, 4]
+```
+
 **4. Değerleri Birleştirmek İçin `reduce()` Kullanma:**
 Bir dizinin öğelerine dayalı olarak tek bir değer hesaplamak gerektiğinde, örneğin toplamı veya maksimum değeri bulmak için kullanılabilir. Her öğeye bir işlev uygular ve sonucu biriktirir.
+
+```typescript
+const numbers = [1, 2, 3, 4, 5];
+// Good practice: reduce() for aggregating values
+const sum = numbers.reduce((acc, num) => acc + num, 0);
+console.log(sum); // Output: 15
+```
 
 **5. `splice()` ve `slice()` Kullanma:**
 splice() ve slice() dizinin belli bölümlerini değiştirmek veya almak için kullanılır, diğer işlemlere göre az performanslı olabilirler. Performans açısından kritik senaryolarda bu fonksiyonları gereksiz yere kullanmaktan kaçınılmalıdır. splice yöntemi, değiştirmek istediğiniz dizinin orijinal halini değiştirir ve çıkardığı elemanları yeni bir dizi olarak döndürür. slice yöntemi, orijinal diziyi değiştirmez ve belirtilen indeksler arasındaki elemanları yeni bir dizi olarak döndürür.
@@ -24,14 +53,76 @@ splice() ve slice() dizinin belli bölümlerini değiştirmek veya almak için k
 **1. Doğrudan Özellik Erişimi İçin Nokta Notasyonunu Kullanma:**
 Özellik adını önceden bildiğiniz durumlarda, özelliklere köşeli parantez notasyonu `object['property']` yerine nokta notasyonuyla `object.property` erişilebilir. Nokta notasyonu daha hızlı ve daha okunabilir özellik sağlar.
 
+```typescript
+const person = {
+  name: "Hanefi",
+  age: 27,
+};
+
+// Good practice: Dot notation for property access
+console.log(person.name); // Output: Hanefi
+```
+
 **2. Nesne özellikleri üzerinde döngü için Object.keys() Kullanma:**
 Nesnenin kendi sayılabilir özellikleri üzerinde döngü yapılması gerektiğinde, Object.keys() kullanarak özellik adlarının bir dizisini alır. Ardından bu dizi üzerinden döngü yaparak ilgili özellik değerlerine erişilebilir.
+
+```typescript
+const person = {
+  name: "Hanefi",
+  age: 27,
+  occupation: "Engineer",
+};
+
+// Good practice: Object.keys () for iterating over object properties
+Object.keys(person).forEach((key) => {
+  console.log(`${key}: ${person[key]}`);
+});
+
+// Output:
+// name: Hanefi
+// age: 27
+// occupation: Engineer
+```
 
 **3. Nesneleri birleştirmek için Object.assign() Kullanma:**
 Birden çok nesneyi birleştirmeniz gerekiyorsa kullanılır. Bu işlev, bir veya daha fazla kaynak nesnedeki özellikleri hedef bir nesneye kopyalar ve sonuç olarak oluşan nesneyi döndürür.
 
+```typescript
+const person = {
+  name: "Hanefi",
+  age: 27,
+};
+
+const additionalInfo = {
+  occupation: "Engineer",
+  hobbies: ["reading", "coding"],
+};
+
+// Good practice: Object.assign() for merging objects
+const mergedPerson = Object.assign({}, person, additionalInfo);
+console.log(mergedPerson);
+// Output:
+//name:'Hanefi'
+//age: 27,
+//occupation:'Engineer'
+//hobbies: ["reading',"coding']
+```
+
 **4. Object Destructuring:**
 Bir nesneden belirli özellikleri çıkarmak ve bunları ayrı değişkenlere atamak gerektiğinde, nesne yıkımı kısa ve okunabilir bir sözdizimi sağlar. Kodun okunabilirliğini ve bakımını iyileştirebilir.
+
+```typescript
+const person = {
+    name: "Hanefi",
+    age: 27,
+    occupation: "Engineer",
+}:
+
+// Good practice: Object destructuring for extracting properties
+const { name, age } = person;
+console. log (name); // Output: Hanefi
+console. log (age); // Output: 27
+```
 
 ## Performans Değerlendirmeleri:
 
