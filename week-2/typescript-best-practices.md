@@ -11,6 +11,7 @@ interface User {
     name: string;
     age: number;
 };
+
 const userl: User = {
     name:"Hanefi",
     age: 27,
@@ -26,6 +27,7 @@ enum Color {
     Green,
     Blue
 };
+
 const myColor: Color = Color.Red;
 ```
 
@@ -35,7 +37,8 @@ Arayüzler(interface), bir sınıf veya fonksiyonun uyması gereken contract tan
 ```typeScript
 interface Calculator {
     (x: number, y: number): number;
-}
+};
+
 const calculatorSumFunction: Calculator = (x, y) => {
     return x + y;
 };
@@ -122,8 +125,10 @@ Generic'ler, farklı tiplerle çalışabilen yeniden kullanılabilir kod yazmam�
 ```typeScript
 function reverseArray<T>(array: T[]): T[] {
     return array.reverse();
-}
+};
+
 const numbers: number[] = [1, 2, 3, 4, 5];
+
 const reversedNumbers: number [] = reverseArray (numbers) ;
 ```
 
@@ -133,23 +138,24 @@ TypeScript, birleşim tipleri ('|') ve kesişim tipleri ('&') sunarak türleri b
 ```typeScript
 interface Summer {
     degree: number;
-}
+};
 
 interface Winter {
     cloud: boolean;
-}
+};
+
 type SummerOrWinter = Summer | Winter;
 
 function processClimate (climate: SummerOrWinter) {
 // ...
-}
+};
 
 type ClimateInfo = Summer & Winter:
 
 const climate: ClimateInfo = {
     degree: 32,
     cloud: false,
-}:
+};
 ```
 
 **14. ESLint ve TSLint Kullanmak:**
@@ -185,7 +191,17 @@ module.exports = {
 **15. Callback Geri Dönüşlerinde Any Yerine Void Kullanmak:**
 Dönen değerlerin tipinin kontrol edilmemiş bir şekilde kullanmanızı önler. Bunun için any yerine void kullanılması gerekir.
 
-<img width=300 src="https://github.com/hanefigulbahar/Malwation-Tasks/assets/90277530/8a1845f8-6e26-4472-81f6-8dc5866e6e6b">
+```typescript
+function call1(x: () => any) {
+  let y = x();
+  y.doAnything(); // Ok but unchecked
+}
+
+function call2(x: () => void) {
+  let y = x();
+  y.doAnything(); // Error property 'doAnything' does not exist on type 'void'
+}
+```
 
 [medium.com](https://medium.com/@hanefigulbahar/what-is-typescript-how-to-use-it-a8b9c894c673)\
 [amazon.com](https://docs.aws.amazon.com/prescriptive-guidance/latest/best-practices-cdk-typescript-iac/typescript-best-practices.html)\
