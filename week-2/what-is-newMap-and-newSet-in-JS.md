@@ -117,3 +117,9 @@ set.clear();
 Map ve Set, benzersiz girişleri olan verilerin koleksiyonlarını depolamak için kullanışlıdır. Temel fark, Map'in anahtar-değer çiftlerini depolaması, Set'in ise sadece değerleri saklamasıdır.
 
 Eğer anahtar-değer çiftleri tutmak ve anahtarlarla hızlı arama yapmak isteniyorsa new Map kullanılabilir. Ancak, sadece benzersiz değerleri depolamak ve hızlı bir şekilde tekrar eden değerleri engellemek isteniyorsa new Set daha uygun bir seçenek olacaktır.
+
+[freecodecamp.org](https://www.freecodecamp.org/news/set-and-map-in-javascript/)\
+[developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)\
+[javascript.info](https://javascript.info/map-set)\
+[medium.com](https://medium.com/geekculture/understanding-javascript-maps-and-sets-ca31a9bf40da)\
+[stackoverflow.com](https://stackoverflow.com/questions/24085708/what-is-difference-between-map-and-set)\
