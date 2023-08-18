@@ -1,5 +1,10 @@
-export type IconTypes = 'search' | 'cancel' | 'spinner';
-interface IIcon extends React.ComponentPropsWithoutRef<'svg'> {
+export type IconTypes =
+  | "search"
+  | "cancel"
+  | "check"
+  | "shortArrowDown"
+  | "shortArrowUp";
+interface IIcon extends React.ComponentPropsWithoutRef<"svg"> {
   icon: IconTypes;
 }
 
