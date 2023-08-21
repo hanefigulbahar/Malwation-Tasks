@@ -30,27 +30,47 @@
     </symbol>
     <!-- search -->
 
+       <!-- check -->
     <symbol
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 14 14"
-      id="cancel"
+      id="check"
       className="h-full w-full">
-      <g>
-        <line
-          x1="13.5"
-          y1="0.5"
-          x2="0.5"
-          y2="13.5"
-          fill="none"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <line
-          x1="0.5"
-          y1="0.5"
-          x2="13.5"
-          y2="13.5"
+      <path
+        d="M.5,8.55l2.73,3.51a1,1,0,0,0,.78.39,1,1,0,0,0,.78-.36L13.5,1.55"
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </symbol>
+    <!-- check -->
+
+     <!-- shortArrowDown -->
+    <symbol
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 14 14"
+      id="shortArrowDown"
+      className="w-full h-full">
+      <path
+        d="M.5,3.85,6.65,10a.48.48,0,0,0,.7,0L13.5,3.85"
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </symbol>
+    <!-- shortArrowDown -->
+    <!-- shortArrowUp -->
+    <symbol
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 14 14"
+      id="shortArrowUp"
+      className="w-full h-full"
+      >
+      <g transform="rotate(180 7 7)">
+        <path
+          d="M.5,3.85,6.65,10a.48.48,0,0,0,.7,0L13.5,3.85"
           fill="none"
           stroke="currentColor"
           strokeLinecap="round"
@@ -58,5 +78,6 @@
         />
       </g>
     </symbol>
+    <!-- shortArrowUp -->
   </defs>
 </svg>
