@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply align-middle antialiased;
+  }
+
+  body {
+    @apply bg-white text-base text-neutral-700;
+    font-size: 16px;
+  }
+}
+
+.spinner_P7sC {
+  transform-origin: center;
+  animation: spinner_svv2 0.75s infinite linear;
+}
+
+@keyframes spinner_svv2 {
+  100% {
+    transform: rotate(360deg);
+  }
+}
