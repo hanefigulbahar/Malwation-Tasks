@@ -1,12 +1,12 @@
-import useLogin from "@hooks/useLogin";
+import ErrorPage from "@pages/Error";
 import Login from "@pages/Login";
 import PageLayout from "@pages/PageLayout";
 import SignIn from "@pages/SignIn";
-
 import User from "@pages/Users/User";
-
 import UsersLayout from "@pages/Users/UsersLayout";
 import Users from "@pages/Users/partials/UserListTable";
+
+import useLogin from "@hooks/useLogin";
 
 import {
   Navigate,
@@ -20,7 +20,7 @@ const router = (isLogin: boolean) => {
       path: "/",
       element: isLogin ? <PageLayout /> : <Navigate to="/login" replace />,
       caseSensitive: true,
-      errorElement: <div>hata</div>,
+      errorElement: <ErrorPage />,
       children: [
         {
           index: true,
@@ -34,34 +34,28 @@ const router = (isLogin: boolean) => {
             {
               index: true,
               element: <Users />,
-              errorElement: <div>hata</div>,
+              errorElement: <ErrorPage />,
             },
             {
               path: ":userId",
               element: <User />,
               caseSensitive: true,
-              errorElement: <div>hata</div>,
+              errorElement: <ErrorPage />,
             },
           ],
-        },
-
-        {
-          path: "*",
-          element: <div>Not found</div>,
-          caseSensitive: true,
         },
       ],
     },
     {
       path: "login",
       element: !isLogin ? <Login /> : <Navigate to="/" replace />,
-      errorElement: <div>hata</div>,
+      errorElement: <ErrorPage />,
       caseSensitive: true,
     },
     {
       path: "register",
       element: isLogin ? <Navigate to="/" replace /> : <SignIn />,
-      errorElement: <div>hata</div>,
+      errorElement: <ErrorPage />,
       caseSensitive: true,
     },
   ]);

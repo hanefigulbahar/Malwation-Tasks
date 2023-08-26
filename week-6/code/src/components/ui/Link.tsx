@@ -10,13 +10,13 @@ export interface ILinkProps
   extends React.LinkHTMLAttributes<HTMLLinkElement>,
     VariantProps<typeof buttonClass> {
   color: "primary" | "secondary" | "tertiary" | "warning" | "success";
-  children?: string;
   leftIcon?: IconTypes;
   rightIcon?: IconTypes;
   disabled?: boolean;
   isLoading?: boolean;
   icon?: IconTypes;
   url: string;
+  textStyle?: string;
 }
 
 const Link: React.FC<ILinkProps> = ({
@@ -30,6 +30,7 @@ const Link: React.FC<ILinkProps> = ({
   rightIcon,
   isLoading,
   url,
+  textStyle,
 }) => {
   const linkIconClass = cn(
     "flex-none",
@@ -75,7 +76,7 @@ const Link: React.FC<ILinkProps> = ({
           )}
         </>
       ) : (
-        <p className="grow p-4">{children}</p>
+        <p className={`${textStyle} grow p-4`}>{children}</p>
       )}
 
       {rightIcon && !icon && (

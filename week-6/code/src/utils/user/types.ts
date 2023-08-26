@@ -15,7 +15,10 @@ export interface IGetUserListItem {
 }
 
 export interface IGetUserList {
-  users: IGetUserListItem[];
+  getUsersList: {
+    __typename: string;
+    users: IGetUserListItem[];
+  };
 }
 
 export const GetUserListForm = z.object({

@@ -1,9 +1,8 @@
 import { gql, useMutation } from "@apollo/client";
 import Button from "@components/ui/Button";
 import Input from "@components/ui/Input";
-import Select from "@components/ui/Select";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { IUpdateUserInput, UpdateUserListForm } from "@utils/api/user/types";
+import { IUpdateUserInput, UpdateUserListForm } from "@utils/user/types";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { useParams } from "react-router-dom";
 

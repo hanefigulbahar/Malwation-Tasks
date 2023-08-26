@@ -1,51 +1,43 @@
-import { gql, useQuery } from "@apollo/client";
+import { ApolloError, useQuery } from "@apollo/client";
 import UsersListFilter from "../UserFilterList";
 import UserListTableItem from "./UserListTableItem";
-import { IGetUserListItem } from "@utils/api/user/types";
+import { IGetUserList, IGetUserListItem } from "@utils/user/types";
 import { useLocation, useNavigate } from "react-router-dom";
 import Loading from "@components/Loading";
 import { useAppDispatch, useAppSelector } from "@libs/redux/hooks";
 import { openModal } from "@libs/redux/reducers/modal";
 import Modal from "@components/Modal";
 import { createPortal } from "react-dom";
-import { useEffect } from "react";
-
-export const GET_USERS_LIST = gql`
-  query GetUsersList($input: GetUsersListInput!) {
-    getUsersList(input: $input) {
-      ... on GetUsersList {
-        users {
-          id
-          name
-          createdAt
-          active
-        }
-      }
-      ... on Error {
-        errorMessage
-      }
-    }
-  }
-`;
+import { GET_USERS_LIST } from "@libs/graphql/querys";
+import { Toaster, toast } from "react-hot-toast";
 
 const Users = () => {
-  const dispatch = useAppDispatch();
-  const modal = useAppSelector((state) => state.modal.isOpen);
-  const navigate = useNavigate();
   const { search } = useLocation();
+  const navigate = useNavigate();
+
+  const dispatch = useAppDispatch();
+
   const queryParams = new URLSearchParams(search);
   const searchQuery = queryParams.get("name");
 
-  const { error, loading, data } = useQuery(GET_USERS_LIST, {
-    variables: {
-      input: {
-        name: searchQuery ? searchQuery : "",
-      },
-    },
-  });
+  const modal = useAppSelector((state) => state.modal.isOpen);
 
-  if (error) return <p>{error.message}</p>;
-  if (loading) return <Loading />;
+  const { loading, previousData, data } = useQuery<IGetUserList>(
+    GET_USERS_LIST,
+    {
+      variables: {
+        input: {
+          name: searchQuery ? searchQuery : "",
+        },
+      },
+
+      onError: (error: ApolloError) => {
+        toast.error(error.message);
+      },
+    }
+  );
+
+  if (!previousData && loading) return <Loading />;
 
   const userDetailHandler = (id: string) => {
     navigate(`${id}`);
@@ -61,18 +53,19 @@ const Users = () => {
   };
 
   return (
-    <div className="relative flex w-full flex-col items-center overflow-x-auto  sm:rounded-lg">
+    <div className="flex flex-col items-center sm:rounded-lg">
+      <Toaster position="top-right" />
       {modal && createPortal(<Modal />, document.body)}
-      <div className="flex w-full flex-col gap-3 p-10">
-        <div className="relative mt-1">
+      <div className="flex w-full flex-col  gap-3 overflow-x-auto p-10">
+        <div className="sticky left-0 mt-1">
           <UsersListFilter
-            loading={loading && search ? true : false}
+            loading={loading}
             defaultValues={{
               name: "",
             }}
           />
         </div>
-        <div className="w-full text-left text-sm text-gray-500">
+        <div className=" min-w-[800px] text-left text-sm text-gray-500">
           <div className="sticky top-0 rounded-t-md bg-primary/30 text-xs uppercase text-gray-800">
             <div className="grid grid-cols-3">
               <p className="px-6 py-3">Name</p>
@@ -80,25 +73,30 @@ const Users = () => {
               <p className="px-6 py-3">Delete</p>
             </div>
           </div>
-          {data?.getUsersList.users.length === 0 && (
-            <div className="grid h-96 place-items-center  bg-gray-100 text-center">
-              <div className="text-gray-500">
-                No results found matching your search
+          {loading ? (
+            <Loading />
+          ) : (
+            <>
+              {data?.getUsersList.users?.length === 0 && (
+                <div className="grid h-96 place-items-center  bg-gray-100 text-center">
+                  <div className="text-gray-500">
+                    No results found matching your search
+                  </div>
+                </div>
+              )}
+              <div>
+                {data?.getUsersList.users.map((user: IGetUserListItem) => (
+                  <UserListTableItem
+                    key={user.id}
+                    user={user}
+                    userDetailHandler={userDetailHandler}
+                    searchQuery={searchQuery}
+                    deleteHandler={deleteHandler}
+                  />
+                ))}
               </div>
-            </div>
+            </>
           )}
-          {loading && <Loading />}
-          <div>
-            {data.getUsersList.users.map((user: IGetUserListItem) => (
-              <UserListTableItem
-                key={user.id}
-                user={user}
-                userDetailHandler={userDetailHandler}
-                searchQuery={searchQuery}
-                deleteHandler={deleteHandler}
-              />
-            ))}
-          </div>
         </div>
       </div>
     </div>

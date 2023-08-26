@@ -26,30 +26,32 @@ const SideBar = () => {
         <ul className="space-y-3 font-medium">
           <li className="flex justify-start">
             <Button
-              color="tertiary"
+              color="primary"
+              variant="textOnly"
               size="medium"
-              icon="eyeOn"
+              icon="menu"
               onClick={toggleHamburger}
             />
           </li>
           <li>
             {hamburgerMenu ? (
               <Link
-                url="/dasboard"
-                color="tertiary"
+                url="/"
+                color="primary"
                 variant="textOnly"
                 size="medium"
-                icon="dashboard"
+                icon="home"
               />
             ) : (
               <Link
-                url="/dasboard"
-                leftIcon="dashboard"
+                textStyle="max-md:hidden"
+                url="/"
+                leftIcon="home"
                 variant="textOnly"
                 size="medium"
-                color="tertiary"
+                color="primary"
               >
-                Dashboard
+                Home
               </Link>
             )}
           </li>
@@ -70,8 +72,9 @@ const SideBar = () => {
                 size="medium"
                 variant="textOnly"
                 leftIcon="logout"
+                textStyle="max-md:hidden"
               >
-                Sign out
+                Logout
               </Button>
             )}
           </li>

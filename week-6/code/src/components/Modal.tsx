@@ -3,8 +3,8 @@ import Button from "./ui/Button";
 import { useAppDispatch, useAppSelector } from "@libs/redux/hooks";
 import { closeModal } from "@libs/redux/reducers/modal";
 import { useForm } from "react-hook-form";
-import { GET_USERS_LIST } from "@pages/Users/partials/UserListTable";
-import { useRef } from "react";
+
+import { GET_USERS_LIST } from "@libs/graphql/querys";
 
 const DELETE = gql`
   mutation DeleteUser($input: DeleteUserInput!) {

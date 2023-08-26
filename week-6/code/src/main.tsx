@@ -1,7 +1,7 @@
 import ReactDOM from "react-dom/client";
 import { Provider } from "react-redux";
 import "./index.css";
-import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
+import { ApolloProvider } from "@apollo/client";
 import { persistor, store } from "@libs/redux/store";
 import Router from "@router";
 import { PersistGate } from "redux-persist/integration/react";

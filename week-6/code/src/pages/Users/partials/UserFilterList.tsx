@@ -1,9 +1,9 @@
 import { useSearchParams } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { GetUserListForm, IGetUserListInput } from "@utils/api/user/types";
 import Button from "@components/ui/Button";
 import Input from "@components/ui/Input";
+import { GetUserListForm, IGetUserListInput } from "@utils/user/types";
 
 function UsersListFilter({
   defaultValues,
@@ -29,9 +29,10 @@ function UsersListFilter({
 
   return (
     <form onSubmit={handleSubmit(onSubmitForm)}>
-      <div className="flex w-full items-end gap-1">
-        <div>
+      <div className="grid grid-cols-3 items-end gap-1 max-md:grid-cols-1">
+        <div className="max-md:w-full">
           <Input
+            disabled={loading}
             leftIcon="search"
             color="primary"
             size="medium"
@@ -40,8 +41,13 @@ function UsersListFilter({
             autoComplete="off"
           />
         </div>
-        <div>
-          <Button isLoading={loading} size="medium" color="primary">
+        <div className=" w-max max-lg:w-full">
+          <Button
+            disabled={loading}
+            isLoading={loading}
+            size="medium"
+            color="primary"
+          >
             Search
           </Button>
         </div>

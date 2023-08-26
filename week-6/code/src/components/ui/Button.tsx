@@ -134,6 +134,7 @@ export interface IButtonProps
   disabled?: boolean;
   isLoading?: boolean;
   icon?: IconTypes;
+  textStyle?: string;
 }
 const Button = React.forwardRef<
   HTMLButtonElement,
@@ -151,6 +152,7 @@ const Button = React.forwardRef<
       children,
       rightIcon,
       isLoading,
+      textStyle,
     },
     ref
   ) => {
@@ -198,7 +200,7 @@ const Button = React.forwardRef<
             )}
           </>
         ) : (
-          <p className="grow p-4">{children}</p>
+          <p className={`${textStyle} grow p-4`}>{children}</p>
         )}
 
         {rightIcon && !icon && (

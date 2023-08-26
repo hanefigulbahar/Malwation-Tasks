@@ -24,6 +24,10 @@ export default {
         warningHover: "#D30000",
         warningActive: "#C00000",
       },
+      backgroundImage: {
+        error404: "url('/404.svg')",
+        error500: "url('/500.svg')",
+      },
     },
   },
   plugins: [],

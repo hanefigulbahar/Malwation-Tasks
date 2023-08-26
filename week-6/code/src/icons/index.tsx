@@ -5,6 +5,12 @@ export const iconPaths = [
   "eyeOff",
   "shortArrowDown",
   "dashboard",
+  "search",
+  "arrowLeft",
+  "users",
+  "menu",
+  "home",
+  "trash",
 ] as const;
 
 export type IconTypes = (typeof iconPaths)[number];

@@ -1,6 +1,6 @@
 import { SubmitErrorHandler, SubmitHandler, useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { ILoginInput, LoginForm } from "@utils/api/auth/types";
+import { ILoginInput, LoginForm } from "@utils/auth/types";
 import { gql, useMutation } from "@apollo/client";
 import Input from "@components/ui/Input";
 import Button from "@components/ui/Button";

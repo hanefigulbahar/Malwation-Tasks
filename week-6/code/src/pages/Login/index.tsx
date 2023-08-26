@@ -1,14 +1,14 @@
 import { SubmitErrorHandler, SubmitHandler, useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useAppDispatch } from "@libs/redux/hooks";
-import { ILoginInput, LoginForm } from "@utils/api/auth/types";
+import { ILoginInput, LoginForm } from "@utils/auth/types";
 import { gql, useMutation } from "@apollo/client";
 import { userLogin } from "@libs/redux/reducers/user";
 import Input from "@components/ui/Input";
 import Button from "@components/ui/Button";
 import { useState } from "react";
 import Link from "@components/ui/Link";
-import { GET_USERS_LIST } from "@pages/Users/partials/UserListTable";
+import { GET_USERS_LIST } from "@libs/graphql/querys";
 
 const LOGIN = gql`
   mutation Login($input: LoginInput!) {
