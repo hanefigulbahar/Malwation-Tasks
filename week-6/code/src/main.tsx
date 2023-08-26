@@ -2,19 +2,18 @@ import ReactDOM from "react-dom/client";
 import { Provider } from "react-redux";
 import "./index.css";
 import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
-import { store } from "@libs/redux/store";
+import { persistor, store } from "@libs/redux/store";
 import Router from "@router";
-
-const client = new ApolloClient({
-  uri: "http://localhost:3000/graphql",
-  cache: new InMemoryCache(),
-});
+import { PersistGate } from "redux-persist/integration/react";
+import { client } from "@libs/graphql";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   /* <React.StrictMode> */
   <ApolloProvider client={client}>
     <Provider store={store}>
-      <Router />
+      <PersistGate loading={null} persistor={persistor}>
+        <Router />
+      </PersistGate>
     </Provider>
   </ApolloProvider>
   /* </React.StrictMode> */
