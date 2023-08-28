@@ -1,0 +1,1846 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <defs>
+
+    <!-- create-->
+    
+      <symbol id="create" className=" h-auto w-full"  viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M13 3H8.2C7.0799 3 6.51984 3 6.09202 3.21799C5.71569 3.40973 5.40973 3.71569 5.21799 4.09202C5 4.51984 5 5.0799 5 6.2V17.8C5 18.9201 5 19.4802 5.21799 19.908C5.40973 20.2843 5.71569 20.5903 6.09202 20.782C6.51984 21 7.0799 21 8.2 21H10M13 3L19 9M13 3V7.4C13 7.96005 13 8.24008 13.109 8.45399C13.2049 8.64215 13.3578 8.79513 13.546 8.89101C13.7599 9 14.0399 9 14.6 9H19M19 9V10M14 21L16.025 20.595C16.2015 20.5597 16.2898 20.542 16.3721 20.5097C16.4452 20.4811 16.5147 20.4439 16.579 20.399C16.6516 20.3484 16.7152 20.2848 16.8426 20.1574L21 16C21.5523 15.4477 21.5523 14.5523 21 14C20.4477 13.4477 19.5523 13.4477 19 14L14.8426 18.1574C14.7152 18.2848 14.6516 18.3484 14.601 18.421C14.5561 18.4853 14.5189 18.5548 14.4903 18.6279C14.458 18.7102 14.4403 18.7985 14.405 18.975L14 21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+    <!-- create-->
+
+    <!--menu -->
+     <symbol id="menu" className=" h-auto w-full"  viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg">
+        <path d="M4 18L20 18"  stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <path d="M4 12L20 12"  stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <path d="M4 6L20 6"  stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </symbol>
+    <!--menu -->
+    <!-- home-->
+
+      <symbol 
+        className=" h-auto w-full" 
+        id="home" xmlns="http://www.w3.org/2000/svg" 
+        xmlns:xlink="http://www.w3.org/1999/xlink" 
+        viewBox="0 0 495.398 495.398"
+        xml:space="preserve">
+      <g>
+        <g>
+          <g>
+            <path d="M487.083,225.514l-75.08-75.08V63.704c0-15.682-12.708-28.391-28.413-28.391c-15.669,0-28.377,12.709-28.377,28.391
+              v29.941L299.31,37.74c-27.639-27.624-75.694-27.575-103.27,0.05L8.312,225.514c-11.082,11.104-11.082,29.071,0,40.158
+              c11.087,11.101,29.089,11.101,40.172,0l187.71-187.729c6.115-6.083,16.893-6.083,22.976-0.018l187.742,187.747
+              c5.567,5.551,12.825,8.312,20.081,8.312c7.271,0,14.541-2.764,20.091-8.312C498.17,254.586,498.17,236.619,487.083,225.514z"/>
+            <path d="M257.561,131.836c-5.454-5.451-14.285-5.451-19.723,0L72.712,296.913c-2.607,2.606-4.085,6.164-4.085,9.877v120.401
+              c0,28.253,22.908,51.16,51.16,51.16h81.754v-126.61h92.299v126.61h81.755c28.251,0,51.159-22.907,51.159-51.159V306.79
+              c0-3.713-1.465-7.271-4.085-9.877L257.561,131.836z"/>
+          </g>
+        </g>
+      </g>
+      </symbol>
+    <!-- home-->
+<!-- trash-->
+
+
+<svg id="trash"  fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 6H20M16 6L15.7294 5.18807C15.4671 4.40125 15.3359 4.00784 15.0927 3.71698C14.8779 3.46013 14.6021 3.26132 14.2905 3.13878C13.9376 3 13.523 3 12.6936 3H11.3064C10.477 3 10.0624 3 9.70951 3.13878C9.39792 3.26132 9.12208 3.46013 8.90729 3.71698C8.66405 4.00784 8.53292 4.40125 8.27064 5.18807L8 6M18 6V16.2C18 17.8802 18 18.7202 17.673 19.362C17.3854 19.9265 16.9265 20.3854 16.362 20.673C15.7202 21 14.8802 21 13.2 21H10.8C9.11984 21 8.27976 21 7.63803 20.673C7.07354 20.3854 6.6146 19.9265 6.32698 19.362C6 18.7202 6 17.8802 6 16.2V6M14 10V17M10 10V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+<!-- trash-->
+
+    <!-- reload -->
+    <symbol 
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 14 14"
+      id="reload"
+      className=" h-auto w-full rotate-45">
+      <g>
+        <path
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M9.25 0.5L11.75 3L9.25 5.5"
+        />
+        <path
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M12.25 8.25C12.25 9.28835 11.9421 10.3034 11.3652 11.1667C10.7883 12.0301 9.9684 12.703 9.00909 13.1004C8.04978 13.4977 6.99418 13.6017 5.97578 13.3991C4.95738 13.1966 4.02192 12.6965 3.28769 11.9623C2.55347 11.2281 2.05345 10.2926 1.85088 9.27422C1.64831 8.25582 1.75227 7.20022 2.14963 6.24091C2.54699 5.2816 3.2199 4.46166 4.08326 3.88478C4.94662 3.30791 5.96165 3 7 3H11.75"
+        />
+      </g>
+    </symbol>
+     <!-- reload -->
+    
+    <!-- uploadFile -->
+    <symbol 
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 14 14"
+      id="uploadFile"
+      className=" h-auto w-full">
+      <g>
+        <path
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M12.5 12.5C12.5 12.7652 12.3946 13.0196 12.2071 13.2071C12.0196 13.3946 11.7652 13.5 11.5 13.5H2.5C2.23478 13.5 1.98043 13.3946 1.79289 13.2071C1.60536 13.0196 1.5 12.7652 1.5 12.5V1.5C1.5 1.23478 1.60536 0.98043 1.79289 0.792893C1.98043 0.605357 2.23478 0.5 2.5 0.5H9L12.5 4V12.5Z"
+        />
+        <path
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M9 6.5L7 4.5L5 6.5"
+        />
+        <path
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M7 4.5L7 10"
+        />
+      </g>
+    </symbol>
+    <!-- uploadFile -->
+    
+    <!-- filter -->
+    <symbol 
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 14 14"
+      id="filter"
+      className=" h-auto w-full">
+      <path
+        d="M13.5.5H.5a6.51,6.51,0,0,0,5,6.33V13.5l3-2V6.83A6.51,6.51,0,0,0,13.5.5Z"
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </symbol>
+     <!-- filter -->
+    
+    <!-- filter -->
+
+    <!-- edit -->
+    <symbol
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 14 14"
+      id="edit"
+      className="h-auto w-full">
+      <path
+        d="M5,12.24.5,13.5,1.76,9,10,.8a1,1,0,0,1,1.43,0L13.2,2.58A1,1,0,0,1,13.2,4Z"
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </symbol>
+    <!-- edit -->
+
+    <!-- eyeOn -->
+    <symbol
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 14 14"
+      id="eyeOn"
+      className="h-auto w-full"
+      >
+      <g>
+        <path
+          d="M13.23,6.33a1,1,0,0,1,0,1.34C12.18,8.8,9.79,11,7,11S1.82,8.8.77,7.67a1,1,0,0,1,0-1.34C1.82,5.2,4.21,3,7,3S12.18,5.2,13.23,6.33Z"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <circle
+          cx="7"
+          cy="7"
+          r="2"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </g>
+    </symbol>
+    <!-- eyeOn -->
+
+    <!-- eyeOff -->
+    <symbol
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 14 14"
+      id="eyeOff"
+      className="h-auto w-full">
+      <g>
+        <path
+          d="M12.29,5.4c.38.34.7.67.94.93a1,1,0,0,1,0,1.34C12.18,8.8,9.79,11,7,11H6.6"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M3.87,10.13A12.4,12.4,0,0,1,.77,7.67a1,1,0,0,1,0-1.34C1.82,5.2,4.21,3,7,3a6.56,6.56,0,0,1,3.13.87"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <line
+          x1="12.5"
+          y1="1.5"
+          x2="1.5"
+          y2="12.5"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M5.59,8.41A2,2,0,0,1,5,7,2,2,0,0,1,7,5a2,2,0,0,1,1.41.59"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M8.74,8A2,2,0,0,1,8,8.73"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </g>
+    </symbol>
+    <!-- eyeOff -->
+
+    <!-- copy -->
+    <symbol
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 14 14"
+      id="copy"
+      className="h-auto w-full">
+      <g>
+        <rect
+          x="3"
+          y="3"
+          width="10.5"
+          height="10.5"
+          rx="1"
+          transform="translate(16.5 16.5) rotate(180)"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M.5,10.5v-9a1,1,0,0,1,1-1h9"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </g>
+    </symbol>
+    <!-- copy -->
+
+    <!-- rocket -->
+    <symbol
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 14 14"
+      fill="none"
+      id="rocket"
+      className="h-auto w-full">
+      <path
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M5.71 4.31C3.79 3 2 4 0.5 5.54L3.82 7.54"
+      />
+      <path
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M9.69002 8.29001C11 10.21 10 12 8.46002 13.5L6.46002 10.18"
+      />
+      <path
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M3.82001 7.53L6.47001 10.18C8.59001 8.91 11 7.68 12.1 6.54C14.48 4.16 13.1 0.900003 13.1 0.900003C13.1 0.900003 9.84001 -0.479997 7.46001 1.9C6.32001 3 5.08001 5.42 3.82001 7.53Z"
+      />
+      <path
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M5.28003 5.02L8.98003 8.72"
+      />
+      <path
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M10.5 4C10.7761 4 11 3.77614 11 3.5C11 3.22386 10.7761 3 10.5 3C10.2239 3 10 3.22386 10 3.5C10 3.77614 10.2239 4 10.5 4Z"
+      />
+      <path
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M3.68 12.44C3.1 13 0.5 13.5 0.5 13.5C0.5 13.5 1 10.9 1.56 10.32C1.69732 10.1726 1.86292 10.0544 2.04692 9.97244C2.23092 9.89046 2.42955 9.84638 2.63095 9.84282C2.83236 9.83927 3.03242 9.87632 3.2192 9.95176C3.40597 10.0272 3.57564 10.1395 3.71808 10.2819C3.86051 10.4244 3.9728 10.594 4.04825 10.7808C4.12369 10.9676 4.16074 11.1676 4.15718 11.3691C4.15363 11.5705 4.10955 11.7691 4.02756 11.9531C3.94558 12.1371 3.82737 12.3027 3.68 12.44V12.44Z"
+      />
+    </symbol>
+    <!-- rocket -->
+
+    <!-- fsa -->
+    <symbol
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 106 117"
+      id="fsa"
+      className=" h-auto w-full transition-all">
+      <g clipPath="url(#clip0_13_1362)">
+        <rect
+        x="-0.585786"
+        y="58.2843"
+        width="38"
+        height="38"
+        rx="3"
+          transform="rotate(-45 -0.585786 58.2843)"
+          fill="#2E7BF8"
+          stroke="#2E7BF8"
+          strokeWidth="2"
+        />
+        <rect
+          x="12"
+          y="58.1421"
+          width="20"
+          height="20"
+          rx="4"
+          transform="rotate(-45 12 58.1421)"
+          fill="#EAF2FE"
+        />
+        <rect
+          x="2"
+          y="1"
+          width="48"
+          height="23"
+          rx="3"
+          fill="#2E7BF8"
+          stroke="#2E7BF8"
+          strokeWidth="2"
+        />
+        <rect
+          x="2"
+          y="93"
+          width="48"
+          height="23"
+          rx="3"
+          fill="#2E7BF8"
+          stroke="#2E7BF8"
+          strokeWidth="2"
+        />
+        <rect
+          x="57"
+          y="1"
+          width="48"
+          height="23"
+          rx="3"
+          fill="#2E7BF8"
+          stroke="#2E7BF8"
+          strokeWidth="2"
+        />
+        <rect
+          x="57"
+          y="47"
+          width="23"
+          height="23"
+          rx="3"
+          fill="#2E7BF8"
+          stroke="#2E7BF8"
+          strokeWidth="2"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_13_1362">
+          <rect width="106" height="117" fill="white" />
+        </clipPath>
+      </defs>
+    </symbol>
+    <!-- fsa -->
+
+    <!-- logout -->
+    <symbol
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 14 14"
+      id="logout"
+      className="h-auto w-full">
+       <g>
+        <path
+          d="M9.5,10.5v2a1,1,0,0,1-1,1h-7a1,1,0,0,1-1-1V1.5a1,1,0,0,1,1-1h7a1,1,0,0,1,1,1v2"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <line
+          x1="6.5"
+          y1="7"
+          x2="13.5"
+          y2="7"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <polyline
+          points="11.5 5 13.5 7 11.5 9"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </g>
+    </symbol>
+    <!-- logout -->
+
+    <!-- flow -->
+    <symbol
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 14 14"
+      id="flow"
+      className="h-auto w-full">
+      <g>
+        <circle
+          cx="7"
+          cy="2.5"
+          r="1.5"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <circle
+          cx="2"
+          cy="11.5"
+          r="1.5"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <circle
+          cx="7"
+          cy="11.5"
+          r="1.5"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <circle
+          cx="12"
+          cy="11.5"
+          r="1.5"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M2,10V8A1,1,0,0,1,3,7h8a1,1,0,0,1,1,1v2"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <line
+          x1="7"
+          y1="4"
+          x2="7"
+          y2="10"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </g>
+    </symbol>
+    <!-- flow -->
+
+    <!-- module -->
+    <symbol
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 14 14"
+      id="module"
+      className="h-auto w-full">
+      <path
+        d="M13.39,3a.47.47,0,0,0-.21-.16L7.18.57a.45.45,0,0,0-.36,0l-6,2.31A.47.47,0,0,0,.61,3a.48.48,0,0,0-.11.3v7.32a.5.5,0,0,0,.32.46l6,2.31.18,0,.18,0,6-2.31a.5.5,0,0,0,.32-.46V3.34A.48.48,0,0,0,13.39,3Z"
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <g>
+        <line
+          x1="7"
+          y1="13.46"
+          x2="7"
+          y2="5.5"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <line
+          x1="7"
+          y1="5.5"
+          x2="7"
+          y2="13.46"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <polyline
+          points="0.61 3.04 7 5.5 13.39 3.04"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </g>
+    </symbol>
+    <!-- module -->
+
+    <!-- report -->
+    <symbol
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 14 14"
+      id="report"
+      className="h-full w-full">
+      <g>
+        <path
+          d="M9.5,1.5H11a1,1,0,0,1,1,1v10a1,1,0,0,1-1,1H3a1,1,0,0,1-1-1V2.5a1,1,0,0,1,1-1H4.5"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <rect
+          x="4.5"
+          y="0.5"
+          width="5"
+          height="2.5"
+          rx="1"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </g>
+    </symbol>
+    <!-- report -->
+
+    <!-- help -->
+    <symbol
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 14 14"
+      id="help"
+      className="h-full w-full">
+      <g>
+        <circle
+          cx="7"
+          cy="7"
+          r="6.5"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M5.5,5.5A1.5,1.5,0,1,1,7,7V8"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M7,9.5a.75.75,0,1,0,.75.75A.76.76,0,0,0,7,9.5Z"
+          fill="currentColor"
+        />
+      </g>
+    </symbol>
+    <!-- help -->
+
+    <!-- search -->
+    <symbol
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 14 14"
+      id="search"
+      className="h-full w-full">
+      <g>
+        <circle
+          cx="5.92"
+          cy="5.92"
+          r="5.42"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <line
+          x1="13.5"
+          y1="13.5"
+          x2="9.75"
+          y2="9.75"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </g>
+    </symbol>
+    <!-- search -->
+
+    <!-- cancel -->
+    <symbol
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 14 14"
+      id="cancel"
+      className="h-full w-full">
+      <g>
+        <line
+          x1="13.5"
+          y1="0.5"
+          x2="0.5"
+          y2="13.5"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <line
+          x1="0.5"
+          y1="0.5"
+          x2="13.5"
+          y2="13.5"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </g>
+    </symbol>
+    <!-- cancel -->
+
+    <!-- check -->
+    <symbol
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 14 14"
+      id="check"
+      className="h-full w-full">
+      <path
+        d="M.5,8.55l2.73,3.51a1,1,0,0,0,.78.39,1,1,0,0,0,.78-.36L13.5,1.55"
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </symbol>
+    <!-- check -->
+
+    <!-- alert -->
+    <symbol
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 14 14"
+      id="alert"
+      className="w-full h-full">
+      <g>
+        <line
+          x1="7"
+          y1="5"
+          x2="7"
+          y2="8"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <circle
+          cx="7"
+          cy="11"
+          r="0.5"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M7.89,1.05a1,1,0,0,0-1.78,0l-5.5,11A1,1,0,0,0,1.5,13.5h11a1,1,0,0,0,.89-1.45Z"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </g>
+    </symbol>
+    <!-- alert -->
+
+    <!-- lock -->
+    <symbol
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 14 14"
+      id="lock"
+      className="w-full h-full">
+      <g>
+        <rect
+          x="2"
+          y="5.5"
+          width="10"
+          height="8"
+          rx="1"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M10.5,5.5V4a3.5,3.5,0,0,0-7,0V5.5"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <circle
+          cx="7"
+          cy="9.5"
+          r="0.5"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </g>
+    </symbol>
+    <!-- lock -->
+
+    <!-- shortArrowDown -->
+    <symbol
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 14 14"
+      id="shortArrowDown"
+      className="w-full h-full">
+      <path
+        d="M.5,3.85,6.65,10a.48.48,0,0,0,.7,0L13.5,3.85"
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </symbol>
+    <!-- shortArrowDown -->
+
+    <!-- shortArrowUp -->
+    <symbol
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 14 14"
+      id="shortArrowUp"
+      className="w-full h-full"
+      >
+      <g transform="rotate(180 7 7)">
+        <path
+          d="M.5,3.85,6.65,10a.48.48,0,0,0,.7,0L13.5,3.85"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </g>
+    </symbol>
+    <!-- shortArrowUp -->
+
+    <!-- shortArrowLeft -->
+    <symbol
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 14 14"
+      id="shortArrowLeft"
+      className="w-full h-full rotate-90">
+      <g transform="rotate(90 7 7)">
+        <path
+          d="M.5,3.85,6.65,10a.48.48,0,0,0,.7,0L13.5,3.85"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </g>
+    </symbol>
+    <!-- shortArrowLeft -->
+
+    <!-- shortArrowRight -->
+    <symbol
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 14 14"
+      id="shortArrowRight"
+      className="w-full h-full rotate-90">
+      <g transform="rotate(-90 7 7)">
+        <path
+          d="M.5,3.85,6.65,10a.48.48,0,0,0,.7,0L13.5,3.85"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </g>
+    </symbol>
+    <!-- shortArrowRight -->
+
+    <!-- arrowDown -->
+    <symbol
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 14 14"
+      id="arrowDown"
+      className="w-full h-full">
+      <g>
+        <line
+          x1="7"
+          y1="0.5"
+          x2="7"
+          y2="13.5"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <polyline
+          points="10.5 10 7 13.5 3.5 10"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </g>
+    </symbol>
+    <!-- arrowDown -->
+
+    <!-- arrowUp -->
+    <symbol
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 14 14"
+      id="arrowUp"
+      className="w-full h-full">
+      <g transform="rotate(180 7 7)">
+        <line
+          x1="7"
+          y1="0.5"
+          x2="7"
+          y2="13.5"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <polyline
+          points="10.5 10 7 13.5 3.5 10"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </g>
+    </symbol>
+    <!-- arrowUp -->
+
+    <!-- arrowLeft -->
+    <symbol
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 14 14"
+      id="arrowLeft"
+      className="w-full h-full">
+      <g transform="rotate(90 7 7)">
+        <line
+          x1="7"
+          y1="0.5"
+          x2="7"
+          y2="13.5"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <polyline
+          points="10.5 10 7 13.5 3.5 10"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </g>
+    </symbol>
+    <!-- arrowLeft -->
+
+    <!-- arrowRight -->
+    <symbol
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 14 14"
+      id="arrowRight"
+      className="w-full h-full">
+      <g transform="rotate(-90 7 7)">
+        <line
+          x1="7"
+          y1="0.5"
+          x2="7"
+          y2="13.5"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <polyline
+          points="10.5 10 7 13.5 3.5 10"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </g>
+    </symbol>
+    <!-- arrowRight -->
+
+    <!-- palette -->
+    <symbol
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 14 14"
+      id="palette"
+      className="w-full h-full">
+      <g>
+        <path
+          d="M1.5.5h3a1,1,0,0,1,1,1V11A2.5,2.5,0,0,1,3,13.5H3A2.5,2.5,0,0,1,.5,11V1.5a1,1,0,0,1,1-1Z"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M5.5,5,9,1.48a1,1,0,0,1,1.41,0L12.52,3.6a1,1,0,0,1,0,1.41L4.77,12.77"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M9,8.5H12.5a1,1,0,0,1,1,1v3a1,1,0,0,1-1,1H3"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <line
+          x1="0.5"
+          y1="4.5"
+          x2="5.5"
+          y2="4.5"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <line
+          x1="0.5"
+          y1="8.5"
+          x2="5.5"
+          y2="8.5"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </g>
+    </symbol>
+    <!-- palette -->
+
+    <!-- delete -->
+    <symbol
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 14 14"
+      id="delete"
+      className="h-auto w-full">
+      <g>
+        <polyline
+          points="11.5 5.5 10.5 13.5 3.5 13.5 2.5 5.5"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <line
+          x1="1"
+          y1="3.5"
+          x2="13"
+          y2="3.5"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M4.46,3.21l0-1.73a1,1,0,0,1,1-1h3a1,1,0,0,1,1,1v2"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </g>
+    </symbol>
+    <!-- delete -->
+
+    <!-- condition -->
+    <symbol
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 14 14"
+      id="condition"
+      className="h-auto w-full">
+      <g>
+        <path
+          d="M4,6.49.79,9.67a1,1,0,0,0,0,1.42l2.12,2.12a1,1,0,0,0,1.42,0L7.51,10"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M10,7.51l3.18-3.18a1,1,0,0,0,0-1.42L11.09.79a1,1,0,0,0-1.42,0L6.49,4"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <line
+          x1="9"
+          y1="5"
+          x2="5"
+          y2="9"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </g>
+    </symbol>
+    <!-- condition -->
+
+    <!-- NOTE: SETTINGS -->
+
+    <!-- key -->
+    <symbol
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 14 14"
+      id="key"
+      className="h-auto w-full">
+      <g>
+        <polyline
+          points="5.62 7.38 11.5 1.5 13.5 3.5"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <line
+          x1="9.25"
+          y1="3.75"
+          x2="11"
+          y2="5.5"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <circle
+          cx="3.5"
+          cy="9.5"
+          r="3"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </g>
+    </symbol>
+    <!-- key -->
+
+    <!-- profile -->
+    <symbol
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 14 14"
+      id="profile"
+      className="h-auto w-full">
+      <g>
+        <circle
+          cx="7"
+          cy="2.5"
+          r="2"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M10.5,8a3.5,3.5,0,0,0-7,0V9.5H5l.5,4h3l.5-4h1.5Z"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </g>
+    </symbol>
+    <!-- profile -->
+
+    <!-- permission -->
+    <symbol
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 14 14"
+      id="permission"
+      className="h-auto w-full">
+      <g>
+        <circle
+          cx="5"
+          cy="2.75"
+          r="2.25"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M6,6.61A4.49,4.49,0,0,0,.5,11v1.5H6"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M10.67,13.47h0a.5.5,0,0,1-.34,0h0A4.48,4.48,0,0,1,7.5,9.31V8A.47.47,0,0,1,8,7.5H13A.47.47,0,0,1,13.5,8V9.31A4.48,4.48,0,0,1,10.67,13.47Z"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </g>
+    </symbol>
+    <!-- permission -->
+
+    <!-- users -->
+    <symbol
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 14 14"
+      id="users"
+      className="h-auto w-full">
+      <g>
+        <path
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M5 6.5C6.38071 6.5 7.5 5.38071 7.5 4C7.5 2.61929 6.38071 1.5 5 1.5C3.61929 1.5 2.5 2.61929 2.5 4C2.5 5.38071 3.61929 6.5 5 6.5Z"
+        />
+        <path
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M0.5 13.5H5H9.5V12.9579C9.49204 12.1957 9.29102 11.4479 8.91573 10.7845C8.54043 10.121 8.0031 9.5635 7.35393 9.16401C6.70475 8.76451 5.96491 8.53608 5.20352 8.50003C5.13564 8.49682 5.06778 8.49514 5 8.495C4.93222 8.49514 4.86436 8.49682 4.79648 8.50003C4.03509 8.53608 3.29525 8.76451 2.64607 9.16401C1.9969 9.5635 1.45957 10.121 1.08427 10.7845C0.708977 11.4479 0.507961 12.1957 0.5 12.9579V13.5Z"
+        />
+        <path
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M9 6.5C10.3807 6.5 11.5 5.38071 11.5 4C11.5 2.61929 10.3807 1.5 9 1.5"
+        />
+        <path
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M11.5 13.5001H13.5V12.9579C13.492 12.1957 13.291 11.4479 12.9157 10.7845C12.5404 10.121 12.0031 9.56352 11.3539 9.16403C10.9343 8.90578 10.4767 8.71902 10 8.6095"
+        />
+      </g>
+    </symbol>
+    <!-- users -->
+
+    <!-- integration -->
+    <symbol
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 14 14"
+      id="integration"
+      className="h-auto w-full">
+      <g>
+        <path
+          d="M13.5,9A6,6,0,0,1,5,.5Z"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <line
+          x1="9.26"
+          y1="4.74"
+          x2="12"
+          y2="2"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <polyline
+          points="3.96 7.57 0.5 13.5 7 13.5 5.92 9.73"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </g>
+    </symbol>
+    <!-- integration -->
+
+    <!-- notification -->
+    <symbol
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 14 14"
+      id="notification"
+      className="h-auto w-full">
+      <g>
+        <path
+          d="M7,.5a4.29,4.29,0,0,1,4.29,4.29c0,4.77,1.74,5.71,2.21,5.71H.5c.48,0,2.21-.95,2.21-5.71A4.29,4.29,0,0,1,7,.5Z"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M5.5,12.33a1.55,1.55,0,0,0,3,0"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </g>
+    </symbol>
+    <!-- notification -->
+
+     <!-- NOTE: SETTINGS -->
+
+    <!-- empty -->
+    <symbol
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 14 14"
+      id="empty"
+      className="h-auto w-full">
+      <g>
+        <path
+          d="M2.5,7V1.5a1,1,0,0,1,1-1h5l5,5v7a1,1,0,0,1-1,1H8"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <polyline
+          points="8.5 0.5 8.5 5.5 13.5 5.5"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <line
+          x1="4.74"
+          y1="9.26"
+          x2="0.5"
+          y2="13.5"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <line
+          x1="0.5"
+          y1="9.26"
+          x2="4.74"
+          y2="13.5"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </g>
+    </symbol>
+    <!-- empty -->
+
+    <!-- spinner -->
+    <symbol
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 14 14"
+      id="spinner"
+      className="h-auto w-full">
+      <g>
+        <line
+          x1="7"
+          y1="0.88"
+          x2="7"
+          y2="3.38"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <line
+          x1="2"
+          y1="3.38"
+          x2="3.84"
+          y2="5.07"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <line
+          x1="1"
+          y1="8.88"
+          x2="3.42"
+          y2="7.98"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <line
+          x1="4.39"
+          y1="13.12"
+          x2="5.5"
+          y2="10.88"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <line
+          x1="12"
+          y1="3.38"
+          x2="10.16"
+          y2="5.07"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <line
+          x1="13"
+          y1="8.88"
+          x2="10.58"
+          y2="7.98"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <line
+          x1="9.61"
+          y1="13.12"
+          x2="8.5"
+          y2="10.88"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </g>
+    </symbol>
+    <!-- spinner -->
+
+    <!-- storage -->
+    <symbol
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 14 14"
+      id="storage"
+      className="h-auto w-full">
+      <g>
+        <ellipse
+          cx="7"
+          cy="3"
+          rx="6.5"
+          ry="2.5"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M.5,3v8c0,1.38,2.91,2.5,6.5,2.5s6.5-1.12,6.5-2.5V3"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M13.5,7c0,1.38-2.91,2.5-6.5,2.5S.5,8.38.5,7"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </g>
+    </symbol>
+    <!-- storage -->
+
+    <!-- aws -->
+    <symbol
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="-45.10065 -44.95 390.8723 269.7"
+      id="aws"
+      className="h-auto w-full">
+      <g transform="translate(-1.668 -1.1)">
+        <path
+          d="M86.4 66.4c0 3.7.4 6.7 1.1 8.9.8 2.2 1.8 4.6 3.2 7.2.5.8.7 1.6.7 2.3 0 1-.6 2-1.9 3L83.2 92c-.9.6-1.8.9-2.6.9-1 0-2-.5-3-1.4-1.4-1.5-2.6-3.1-3.6-4.7-1-1.7-2-3.6-3.1-5.9-7.8 9.2-17.6 13.8-29.4 13.8-8.4 0-15.1-2.4-20-7.2-4.9-4.8-7.4-11.2-7.4-19.2 0-8.5 3-15.4 9.1-20.6 6.1-5.2 14.2-7.8 24.5-7.8 3.4 0 6.9.3 10.6.8 3.7.5 7.5 1.3 11.5 2.2v-7.3c0-7.6-1.6-12.9-4.7-16-3.2-3.1-8.6-4.6-16.3-4.6-3.5 0-7.1.4-10.8 1.3-3.7.9-7.3 2-10.8 3.4-1.6.7-2.8 1.1-3.5 1.3-.7.2-1.2.3-1.6.3-1.4 0-2.1-1-2.1-3.1v-4.9c0-1.6.2-2.8.7-3.5.5-.7 1.4-1.4 2.8-2.1 3.5-1.8 7.7-3.3 12.6-4.5C41 1.9 46.2 1.3 51.7 1.3c11.9 0 20.6 2.7 26.2 8.1 5.5 5.4 8.3 13.6 8.3 24.6v32.4zM45.8 81.6c3.3 0 6.7-.6 10.3-1.8 3.6-1.2 6.8-3.4 9.5-6.4 1.6-1.9 2.8-4 3.4-6.4.6-2.4 1-5.3 1-8.7v-4.2c-2.9-.7-6-1.3-9.2-1.7-3.2-.4-6.3-.6-9.4-.6-6.7 0-11.6 1.3-14.9 4-3.3 2.7-4.9 6.5-4.9 11.5 0 4.7 1.2 8.2 3.7 10.6 2.4 2.5 5.9 3.7 10.5 3.7zm80.3 10.8c-1.8 0-3-.3-3.8-1-.8-.6-1.5-2-2.1-3.9L96.7 10.2c-.6-2-.9-3.3-.9-4 0-1.6.8-2.5 2.4-2.5h9.8c1.9 0 3.2.3 3.9 1 .8.6 1.4 2 2 3.9l16.8 66.2 15.6-66.2c.5-2 1.1-3.3 1.9-3.9.8-.6 2.2-1 4-1h8c1.9 0 3.2.3 4 1 .8.6 1.5 2 1.9 3.9l15.8 67 17.3-67c.6-2 1.3-3.3 2-3.9.8-.6 2.1-1 3.9-1h9.3c1.6 0 2.5.8 2.5 2.5 0 .5-.1 1-.2 1.6-.1.6-.3 1.4-.7 2.5l-24.1 77.3c-.6 2-1.3 3.3-2.1 3.9-.8.6-2.1 1-3.8 1h-8.6c-1.9 0-3.2-.3-4-1-.8-.7-1.5-2-1.9-4L156 23l-15.4 64.4c-.5 2-1.1 3.3-1.9 4-.8.7-2.2 1-4 1zm128.5 2.7c-5.2 0-10.4-.6-15.4-1.8-5-1.2-8.9-2.5-11.5-4-1.6-.9-2.7-1.9-3.1-2.8-.4-.9-.6-1.9-.6-2.8v-5.1c0-2.1.8-3.1 2.3-3.1.6 0 1.2.1 1.8.3.6.2 1.5.6 2.5 1 3.4 1.5 7.1 2.7 11 3.5 4 .8 7.9 1.2 11.9 1.2 6.3 0 11.2-1.1 14.6-3.3 3.4-2.2 5.2-5.4 5.2-9.5 0-2.8-.9-5.1-2.7-7-1.8-1.9-5.2-3.6-10.1-5.2L246 52c-7.3-2.3-12.7-5.7-16-10.2-3.3-4.4-5-9.3-5-14.5 0-4.2.9-7.9 2.7-11.1 1.8-3.2 4.2-6 7.2-8.2 3-2.3 6.4-4 10.4-5.2 4-1.2 8.2-1.7 12.6-1.7 2.2 0 4.5.1 6.7.4 2.3.3 4.4.7 6.5 1.1 2 .5 3.9 1 5.7 1.6 1.8.6 3.2 1.2 4.2 1.8 1.4.8 2.4 1.6 3 2.5.6.8.9 1.9.9 3.3v4.7c0 2.1-.8 3.2-2.3 3.2-.8 0-2.1-.4-3.8-1.2-5.7-2.6-12.1-3.9-19.2-3.9-5.7 0-10.2.9-13.3 2.8-3.1 1.9-4.7 4.8-4.7 8.9 0 2.8 1 5.2 3 7.1 2 1.9 5.7 3.8 11 5.5l14.2 4.5c7.2 2.3 12.4 5.5 15.5 9.6 3.1 4.1 4.6 8.8 4.6 14 0 4.3-.9 8.2-2.6 11.6-1.8 3.4-4.2 6.4-7.3 8.8-3.1 2.5-6.8 4.3-11.1 5.6-4.5 1.4-9.2 2.1-14.3 2.1z"
+          fill="#252f3e"
+        />
+        <g id="g1863">
+          <path
+            d="M273.5 143.7c-32.9 24.3-80.7 37.2-121.8 37.2-57.6 0-109.5-21.3-148.7-56.7-3.1-2.8-.3-6.6 3.4-4.4 42.4 24.6 94.7 39.5 148.8 39.5 36.5 0 76.6-7.6 113.5-23.2 5.5-2.5 10.2 3.6 4.8 7.6z"
+            fill="#FF9900"
+          />
+          <path
+            d="M287.2 128.1c-4.2-5.4-27.8-2.6-38.5-1.3-3.2.4-3.7-2.4-.8-4.5 18.8-13.2 49.7-9.4 53.3-5 3.6 4.5-1 35.4-18.6 50.2-2.7 2.3-5.3 1.1-4.1-1.9 4-9.9 12.9-32.2 8.7-37.5z"
+            fill="#FF9900"
+          />
+        </g>
+      </g>
+    </symbol>
+    <!-- aws -->
+
+    <!-- minio -->
+    <symbol
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 162.612 24.465"
+      id="minio"
+      className="h-auto w-full">
+      <path
+        d="M52.751.414h9.108v23.63h-9.108zM41.711.74l-18.488 9.92a.919.919 0 0 1-.856 0L3.879.74A2.808 2.808 0 0 0 2.558.414h-.023A2.4 2.4 0 0 0 0 2.641v21.376h9.1V13.842a.918.918 0 0 1 1.385-.682l10.361 5.568a3.634 3.634 0 0 0 3.336.028l10.933-5.634a.917.917 0 0 1 1.371.69v10.205h9.1V2.641A2.4 2.4 0 0 0 43.055.414h-.023a2.808 2.808 0 0 0-1.321.326zm65.564-.326h-9.237v10.755a.913.913 0 0 1-1.338.706L72.762.675a2.824 2.824 0 0 0-1.191-.261h-.016a2.4 2.4 0 0 0-2.535 2.227v21.377h9.163V13.275a.914.914 0 0 1 1.337-.707l24.032 11.2a2.813 2.813 0 0 0 1.188.26 2.4 2.4 0 0 0 2.535-2.227zm7.161 23.63V.414h4.191v23.63zm28.856.421c-11.274 0-19.272-4.7-19.272-12.232C124.02 4.741 132.066 0 143.292 0s19.32 4.7 19.32 12.233-7.902 12.232-19.32 12.232zm0-21.333c-8.383 0-14.84 3.217-14.84 9.1 0 5.926 6.457 9.1 14.84 9.1s14.887-3.174 14.887-9.1c0-5.883-6.504-9.1-14.887-9.1z"
+        fill="#c72c48"
+      />
+    </symbol>
+    <!-- minio -->
+
+    <!-- fs -->
+    <symbol
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 14 14"
+      id="fs"
+      className="h-auto w-full">
+      <g>
+        <path
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M12.5 7.5H1.5C0.947715 7.5 0.5 7.94772 0.5 8.5V12.5C0.5 13.0523 0.947715 13.5 1.5 13.5H12.5C13.0523 13.5 13.5 13.0523 13.5 12.5V8.5C13.5 7.94772 13.0523 7.5 12.5 7.5Z"
+        />
+        <path
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M0.590027 8.08005L2.33003 1.28005C2.37975 1.05955 2.50272 0.862392 2.67888 0.720741C2.85503 0.579089 3.07399 0.501299 3.30003 0.500055H10.7C10.9312 0.494405 11.1572 0.569039 11.3395 0.711254C11.5218 0.853468 11.6492 1.05447 11.7 1.28005L13.44 8.08005"
+        />
+        <path
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M3.5 10.5H6.5"
+        />
+        <path
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M10.5 11C10.7761 11 11 10.7761 11 10.5C11 10.2239 10.7761 10 10.5 10C10.2239 10 10 10.2239 10 10.5C10 10.7761 10.2239 11 10.5 11Z"
+        />
+      </g>
+    </symbol>
+    <!-- fs -->
+
+    <!-- file -->
+    <symbol
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 14 14"
+      id="file"
+      className="h-auto w-full">
+      <g>
+        <path
+          d="M12.5,12.5a1,1,0,0,1-1,1h-9a1,1,0,0,1-1-1V1.5a1,1,0,0,1,1-1h5l5,5Z"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <polyline
+          points="7.5 0.5 7.5 5.5 12.5 5.5"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </g>
+    </symbol>
+    <!-- file -->
+
+    <!-- msTeams -->
+    <symbol
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="none"
+      id="msTeams"
+      className="h-auto w-full">
+      <path
+        stroke="currentColor"
+        strokeLinejoin="round"
+        d="M12.5 10h4a1 1 0 0 1 1 1v5.5a5 5 0 0 1-9.9 1"
+      />
+      <path
+        stroke="currentColor"
+        strokeLinejoin="round"
+        d="M17.413 17.432A3.25 3.25 0 0 0 22.5 14.75v-3.861a.889.889 0 0 0-.889-.889H16.89a.89.89 0 0 0-.189.02"
+      />
+      <path
+        stroke="currentColor"
+        strokeLinejoin="round"
+        d="M17.5 6.25a1.75 1.75 0 1 0 3.5 0 1.75 1.75 0 1 0-3.5 0"
+      />
+      <path stroke="currentColor" d="M4.5 9.5h5" />
+      <path stroke="currentColor" d="M7 9.5V15" />
+      <path
+        stroke="currentColor"
+        d="M1.5 16.5v-9a1 1 0 0 1 1-1h9a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1h-9a1 1 0 0 1-1-1Z"
+      />
+      <path
+        stroke="currentColor"
+        strokeLinejoin="round"
+        d="M12.5 7.5a2.5 2.5 0 1 0-2-1"
+      />
+    </symbol>
+    <!-- msTeams -->
+
+    <!-- discord -->
+    <symbol
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="none"
+      id="discord"
+      className="h-auto w-full">
+      <path
+        stroke="currentColor"
+        strokeLinejoin="round"
+        d="M7 12.75a1.5 1.75 0 1 0 3 0 1.5 1.75 0 1 0-3 0"
+      />
+      <path
+        stroke="currentColor"
+        strokeLinejoin="round"
+        d="M14 12.75a1.5 1.75 0 1 0 3 0 1.5 1.75 0 1 0-3 0"
+      />
+      <path
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M9.5 5.5S10.58 5 12 5s2.5.5 2.5.5L15 4c1.755 0 3.06.293 4.5 1 1 1.667 3 6.4 3 12-1.864 1.924-3.304 2.736-5.5 3l-1.5-2.5c-.5.167-1.9.5-3.5.5s-3-.333-3.5-.5L7 20c-2.196-.264-3.636-1.076-5.5-3 0-5.6 2-10.333 3-12C5.94 4.293 7.245 4 9 4l.5 1.5Z"
+      />
+      <path
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M8.5 17.5c-1.086-.277-2-1-2-1"
+      />
+      <path
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M15.5 17.5c1.086-.277 2-1 2-1"
+      />
+    </symbol>
+    <!-- discord -->
+
+    <!-- jira -->
+    <symbol
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="none"
+      id="jira"
+      className="h-auto w-full">
+      <path
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M17 8a1 1 0 0 0-1-1H6.5l.01.066a4 4 0 0 0 3.96 3.434h3.03v3.03a4 4 0 0 0 3.434 3.96l.066.01V8Z"
+      />
+      <path
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M11.5 13.5a1 1 0 0 0-1-1h-9l.01.066A4 4 0 0 0 5.47 16H8v2.53a4 4 0 0 0 3.434 3.96l.066.01v-9Z"
+      />
+      <path
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M22.5 2.5a1 1 0 0 0-1-1h-10l.01.066A4 4 0 0 0 15.47 5H19v3.53a4 4 0 0 0 3.434 3.96l.066.01v-10Z"
+      />
+    </symbol>
+    <!-- jira -->
+
+    <!-- slack -->
+    <symbol
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="none"
+      id="slack"
+      className="h-auto w-full">
+      <path
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M18.5 11V9a2 2 0 1 1 2 2h-2Z"
+      />
+      <path
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M13 18.5h2a2 2 0 1 1-2 2v-2Z"
+      />
+      <path
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M3.5 13h2v2a2 2 0 1 1-2-2Z"
+      />
+      <path
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M11 5.5H9a2 2 0 1 1 2-2v2Z"
+      />
+      <path
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M3.25 7.5h6a1.75 1.75 0 1 1 0 3.5h-6a1.75 1.75 0 1 1 0-3.5Z"
+      />
+      <path
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M7.5 20.75v-6a1.75 1.75 0 1 1 3.5 0v6a1.75 1.75 0 1 1-3.5 0Z"
+      />
+      <path
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M14.75 13h6a1.75 1.75 0 1 1 0 3.5h-6a1.75 1.75 0 1 1 0-3.5Z"
+      />
+      <path
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M13 9.25v-6a1.75 1.75 0 1 1 3.5 0v6a1.75 1.75 0 1 1-3.5 0Z"
+      />
+    </symbol>
+    <!-- slack -->
+
+    <!-- mail -->
+    <symbol
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 14 14"
+      fill="none"
+      id="mail"
+      className="h-auto w-full">
+      <g>
+        <path
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M12.5 1.75h-11a1 1 0 0 0-1 1v8.5a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-8.5a1 1 0 0 0-1-1Z"
+        />
+        <path
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="m.5 3 5.86 3.524c.18.106.406.163.64.163.234 0 .46-.057.64-.163L13.5 3"
+        />
+      </g>
+    </symbol>
+    <!-- mail -->
+
+    <!-- webhook -->
+    <symbol
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 14 14"
+      fill="none"
+      id="webhook"
+      className="h-auto w-full">
+      <g>
+        <rect
+          x="3"
+          y="3"
+          width="8"
+          height="8"
+          rx="1"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <line
+          x1="5"
+          y1="3"
+          x2="5"
+          y2="0.5"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <line
+          x1="9"
+          y1="3"
+          x2="9"
+          y2="0.5"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <line
+          x1="3"
+          y1="9"
+          x2="0.5"
+          y2="9"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <line
+          x1="3"
+          y1="5"
+          x2="0.5"
+          y2="5"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <line
+          x1="9"
+          y1="11"
+          x2="9"
+          y2="13.5"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <line
+          x1="5"
+          y1="11"
+          x2="5"
+          y2="13.5"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <line
+          x1="11"
+          y1="5"
+          x2="13.5"
+          y2="5"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <line
+          x1="11"
+          y1="9"
+          x2="13.5"
+          y2="9"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <line
+          x1="8.5"
+          y1="7.5"
+          x2="6.5"
+          y2="7.5"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </g>
+    </symbol>
+    <!-- webhook -->
+      <!-- dashboard -->
+    <symbol
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 14 14"
+      id="dashboard"
+      className="h-auto w-full">
+      <g>
+        <rect
+          x="0.5"
+          y="0.5"
+          width="5"
+          height="5"
+          rx="1"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <rect
+          x="8.5"
+          y="0.5"
+          width="5"
+          height="5"
+          rx="1"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <rect
+          x="0.5"
+          y="8.5"
+          width="5"
+          height="5"
+          rx="1"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <rect
+          x="8.5"
+          y="8.5"
+          width="5"
+          height="5"
+          rx="1"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </g>
+    </symbol>
+    <!-- dashboard -->
+    
+  </defs>
+</svg>
