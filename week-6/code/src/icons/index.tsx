@@ -11,6 +11,7 @@ export const iconPaths = [
   "menu",
   "home",
   "trash",
+  "create",
 ] as const;
 
 export type IconTypes = (typeof iconPaths)[number];

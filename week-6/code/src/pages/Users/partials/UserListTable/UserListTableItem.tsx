@@ -4,10 +4,11 @@ import Button from "@components/ui/Button";
 
 interface IUserListTableItemProps {
   user: IGetUserListItem;
-  userDetailHandler: (id: string) => void;
-  deleteHandler: (e: any, id: any) => void;
   searchQuery: string | null;
+  userDetailHandler: (id: string) => void;
+  deleteHandler: (e: any, id: string) => void;
 }
+
 const UserListTableItem = ({
   user,
   userDetailHandler,

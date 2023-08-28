@@ -1,17 +1,27 @@
 import { z } from "zod";
-
-export interface IGetUser {
-  id: string;
-  name: string;
-  active: boolean;
-  permissions: string[];
-}
+export const permissionsArray = ["Read", "Create", "Delete", "Update"] as const;
 
 export interface IGetUserListItem {
   id: string;
   name: string;
   active: boolean;
   createAt: number;
+}
+
+export interface IGetOneUser {
+  getOneUser: {
+    active: true;
+    name: string;
+    permissions: string[];
+    __typename: string;
+  };
+}
+
+export interface IGetUser {
+  id: string;
+  name: string;
+  active: boolean;
+  permissions: string[];
 }
 
 export interface IGetUserList {
@@ -27,18 +37,21 @@ export const GetUserListForm = z.object({
     z.string(),
   ]),
 });
-
 export const UpdateUserListForm = z.object({
-  name: z.string().regex(/^(?!.*\s)[\S\s]*\S$/, {
-    message: "First name cannot be ignored and no space can be left",
-  }),
+  name: z
+    .string()
+    .min(2)
+    .max(15)
+    .regex(new RegExp("^[a-zA-Z0-9çğıöşüÇĞİÖŞÜ]*$", "gi"), "Invalid Character"),
   password: z
     .string()
-    .min(6)
-    .max(20)
-    .regex(/^(?!.*\s)[\S\s]*\S$/, {
-      message: "Password cannot be ignored and no space can be left",
-    }),
+    .regex(new RegExp("^[a-zA-Z0-9çğıöşüÇĞİÖŞÜ]*$", "gi"), "Invalid Character")
+    .refine(
+      (value) => value.length === 0 || (value.length > 2 && value.length < 15),
+      "Password must be maximum 15 and minimum 2 characters"
+    ),
+  active: z.boolean(),
+  permissions: z.array(z.enum(permissionsArray)),
 });
 
 export interface IUpdateUserInput {
@@ -48,9 +61,20 @@ export interface IUpdateUserInput {
   password: string;
 }
 
-export interface ICreateUserInput {
-  name: string;
-  password: string;
+export interface ICreateUser {
+  createUser: {
+    __typename: string;
+    message: string;
+    errorMessage: string;
+  };
+}
+
+export interface IDeleteUser {
+  deleteUser: {
+    __typename: string;
+    message: string;
+    errorMessage: string;
+  };
 }
 
 export type IGetUserListInput = z.infer<typeof GetUserListForm>;

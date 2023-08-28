@@ -27,7 +27,7 @@ export const buttonClass = cva(
         warning: "bg-warning  hover:bg-warningHover active:bg-warningActive",
       },
       disabled: {
-        true: "cursor-not-allowed border-gray-300 bg-gray-300 text-gray-400 hover:border-gray-300 hover:bg-gray-300 hover:text-gray-400 active:bg-gray-300",
+        true: "cursor-not-allowed border-gray-300 bg-gray-300 text-gray-400 hover:border-gray-300 hover:bg-gray-300 hover:text-gray-400 fill-gray-400 active:bg-gray-300",
       },
       onlyIcon: {
         true: "rounded-full",
@@ -98,13 +98,13 @@ export const buttonClass = cva(
         variant: "secondary",
         disabled: true,
         className:
-          "cursor-not-allowed border-gray-300 text-gray-300 hover:border-gray-300 hover:bg-transparent hover:text-gray-300 active:bg-transparent",
+          "cursor-not-allowed fill-gray-300 border-gray-300 text-gray-300 hover:border-gray-300 hover:bg-transparent hover:text-gray-300 active:bg-transparent",
       },
       {
         variant: "textOnly",
         disabled: true,
         className:
-          "cursor-not-allowed  bg-gray-50  text-gray-300  hover:bg-gray-50 hover:text-gray-300 active:bg-gray-50",
+          "cursor-not-allowed fill-gray-300  bg-gray-50  text-gray-300  hover:bg-gray-50 hover:text-gray-300 active:bg-gray-50",
       },
       {
         size: "large",
@@ -164,6 +164,7 @@ const Button = React.forwardRef<
     );
     return (
       <button
+        disabled={isLoading || disabled}
         onClick={onClick}
         className={cn(
           buttonClass({
@@ -185,7 +186,7 @@ const Button = React.forwardRef<
           </>
         ) : (
           <>
-            {isLoading && !icon && !disabled ? (
+            {isLoading && !icon && disabled ? (
               <Spinner className={cn(btnIconClass)} />
             ) : null}
           </>

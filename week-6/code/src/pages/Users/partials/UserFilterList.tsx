@@ -14,7 +14,7 @@ function UsersListFilter({
 }) {
   const [searchParams, setSearchParams] = useSearchParams();
 
-  const { register, handleSubmit } = useForm<IGetUserListInput>({
+  const { register, handleSubmit, reset } = useForm<IGetUserListInput>({
     resolver: zodResolver(GetUserListForm),
     defaultValues,
   });
@@ -25,6 +25,7 @@ function UsersListFilter({
     } else {
       setSearchParams({});
     }
+    reset();
   };
 
   return (

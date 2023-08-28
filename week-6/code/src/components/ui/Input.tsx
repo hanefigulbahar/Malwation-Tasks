@@ -67,7 +67,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
       size === "small" && "h-3 w-3"
     );
     const inputErrorMessageClass = cn(
-      "text-warning",
+      "text-warning absolute",
       size === "large" && "text-sm",
       size === "medium" && "text-xs",
       size === "small" && "text-xs"

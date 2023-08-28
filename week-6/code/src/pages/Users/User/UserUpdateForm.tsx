@@ -1,119 +1,188 @@
-import { gql, useMutation } from "@apollo/client";
+import { useState } from "react";
+import { useParams } from "react-router-dom";
+import { useMutation } from "@apollo/client";
+import { SubmitHandler, useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { toast } from "react-hot-toast";
+
 import Button from "@components/ui/Button";
 import Input from "@components/ui/Input";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { IUpdateUserInput, UpdateUserListForm } from "@utils/user/types";
-import { SubmitHandler, useForm } from "react-hook-form";
-import { useParams } from "react-router-dom";
+import {
+  IGetOneUser,
+  IUpdateUserInput,
+  IUpdateUserListInput,
+  UpdateUserListForm,
+  permissionsArray,
+} from "@utils/user/types";
+import { GET_ONE_USER, UPDATE_USER } from "@libs/graphql/querys";
+import { useAppDispatch, useAppSelector } from "@libs/redux/hooks";
+import { userUpdate } from "@libs/redux/reducers/user";
 
-const UPDATE_USER = gql`
-  mutation UpdateUser($input: UpdateUserInput!) {
-    updateUser(input: $input) {
-      ... on Message {
-        message
-      }
-      ... on Error {
-        errorMessage
-      }
-    }
-  }
-`;
-const UserUpdateForm = (user: any) => {
-  const [updateUser, { loading, error }] = useMutation(UPDATE_USER);
+interface IUserUpdateFormProps {
+  user?: IGetOneUser;
+}
+
+const UserUpdateForm = ({ user }: IUserUpdateFormProps) => {
+  const dispatch = useAppDispatch();
+  const loginUserID = useAppSelector((state) => state.user.id);
   const { userId } = useParams();
+  const [isChecked, setIsChecked] = useState<boolean>(
+    user ? user.getOneUser.active : false
+  );
+  const [passwordShown, setPasswordShown] = useState(false);
 
   const {
     register,
-    watch,
     handleSubmit,
+    getValues,
     formState: { errors },
-  } = useForm<IUpdateUserInput>({
+  } = useForm<IUpdateUserListInput>({
     resolver: zodResolver(UpdateUserListForm),
   });
 
-  const onSubmit: SubmitHandler<IUpdateUserInput> = async (
-    value: IUpdateUserInput
+  const [updateUser, { loading }] = useMutation(UPDATE_USER, {
+    onCompleted: (data) => {
+      if (data.updateUser.__typename === "Message") {
+        toast.success(data.updateUser.message);
+        const value = getValues();
+
+        if (userId === loginUserID) {
+          dispatch(
+            userUpdate({
+              name: value.name,
+              permissions: value.permissions,
+            })
+          );
+        }
+      } else {
+        toast.error(data.updateUser.errorMessage);
+      }
+    },
+  });
+
+  const onSubmit: SubmitHandler<IUpdateUserListInput> = async (
+    data: IUpdateUserInput
   ) => {
-    try {
-      const { data } = await updateUser({
-        variables: {
-          input: {
-            id: userId,
-            user: {
-              name: value.name ? value.name : "",
-              password: value.password ? value.password : "",
-              active: true,
-              permissions: [],
+    await updateUser({
+      variables: {
+        input: {
+          id: userId,
+          user: {
+            ...data,
+          },
+        },
+      },
+      refetchQueries: [
+        {
+          query: GET_ONE_USER,
+          variables: {
+            input: {
+              id: userId,
             },
           },
         },
-      });
-      if (data) {
-        console.log("başarılı");
-      } else {
-        alert(data.login.errorMessage);
-      }
-    } catch (error) {
-      console.log(error);
-    }
+      ],
+    });
   };
 
-  if (loading) {
-    return <p>Loading...</p>;
-  }
-
-  if (error) {
-    return <p>Error: {error.message}</p>;
-  }
-
-  console.log(watch("active"));
   return (
-    <div>
-      <form className="w-full p-10" onSubmit={handleSubmit(onSubmit)}>
-        <div className="group relative z-0 mb-10 w-full ">
-          <Input
-            defaultValue={user.user.getOneUser.name}
-            errorMessage={errors.name?.message}
-            id="Name"
-            size="medium"
-            color="primary"
-            type="text"
-            {...register("name")}
-          />
-        </div>
-        <div className="grid items-end md:grid-cols-2 md:gap-6">
-          <div className="group relative z-0 mb-10 w-full">
-            <Input
-              errorMessage={errors.password?.message}
-              id="Password"
-              size="medium"
-              color="primary"
-              type="text"
-              {...register("password")}
-            />
-          </div>
-          <div className="group relative z-0 mb-10 w-full ">
-            <select {...register("active")}>
-              <option value="true">active</option>
-              <option value="false">pasive</option>
-            </select>
-            {/* <Select
-              data={["active", "pasive"]}
-              errorMessage={errors.active?.message}
-              id="Active"
-              size="medium"
-              color="primary"
-            /> */}
-          </div>
-        </div>
+    <form
+      className="grid w-full grid-cols-2 grid-rows-3 items-center gap-10 p-10 max-lg:grid-cols-1 max-lg:space-y-2 "
+      onSubmit={handleSubmit(onSubmit)}
+    >
+      <div>
+        <Input
+          disabled={loading}
+          errorMessage={errors.name?.message}
+          defaultValue={user?.getOneUser.name}
+          autoComplete="off"
+          id="Name"
+          size="medium"
+          color="primary"
+          type="text"
+          {...register("name")}
+        />
+      </div>
+      <div>
+        <Input
+          disabled={loading}
+          errorMessage={errors.password?.message}
+          autoComplete="off"
+          id="Password"
+          size="medium"
+          color="primary"
+          type={passwordShown ? "text" : "password"}
+          rightIcon={passwordShown ? "eyeOn" : "eyeOff"}
+          {...register("password")}
+          rightIconOnClick={() => {
+            setPasswordShown((state) => !state);
+          }}
+        />
+      </div>
 
-        <div className="grid md:grid-cols-2 md:gap-6">
-          <Button type="submit" size="medium" color="primary">
-            Submit
-          </Button>
-        </div>
-      </form>
-    </div>
+      <div className="flex items-center justify-center gap-2 ">
+        <label className="flex w-max cursor-pointer select-none items-center gap-3">
+          <div className="relative">
+            <input
+              disabled={loading}
+              {...register("active")}
+              type="checkbox"
+              checked={isChecked}
+              onChange={() => {
+                setIsChecked((state) => !state);
+              }}
+              className="sr-only"
+            />
+            <div
+              className={`box block h-8 w-14 rounded-full ${
+                isChecked && !loading ? "bg-success " : "bg-gray-300"
+              }`}
+            ></div>
+            <div
+              className={`absolute left-1 top-1 flex h-6 w-6 items-center justify-center rounded-full bg-white transition ${
+                isChecked ? "translate-x-full" : ""
+              }`}
+            ></div>
+          </div>
+        </label>
+        <p>Active User</p>
+      </div>
+      <div className="">
+        <ul className="grid grid-cols-2 grid-rows-2 place-items-center rounded-lg  border-gray-200 bg-white text-sm text-gray-900">
+          {permissionsArray.map((permission, index) => (
+            <li key={index} className="w-full">
+              <div className="flex items-center justify-center pl-3">
+                <input
+                  disabled={loading}
+                  {...register("permissions")}
+                  type="checkbox"
+                  value={permission}
+                  defaultChecked={
+                    user?.getOneUser.permissions.includes(permission)
+                      ? true
+                      : false
+                  }
+                  className="h-6 w-6 rounded border-primary bg-gray-100 accent-primaryActive  "
+                />
+                <label className="ml-2 w-full py-3 text-sm font-medium text-gray-900">
+                  {permission}
+                </label>
+              </div>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <Button
+        disabled={loading}
+        isLoading={loading}
+        type="submit"
+        size="medium"
+        color="primary"
+      >
+        Submit
+      </Button>
+    </form>
   );
 };
 

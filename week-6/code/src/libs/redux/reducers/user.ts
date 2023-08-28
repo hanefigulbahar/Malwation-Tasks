@@ -13,6 +13,11 @@ interface ILoginAction {
   permissions: string[];
 }
 
+interface IReduxUpdateUser {
+  name: string;
+  permissions: string[];
+}
+
 const initialState: IReduxUser = { isLogin: false };
 
 const userSlice = createSlice({
@@ -30,8 +35,14 @@ const userSlice = createSlice({
         isLogin: false,
       };
     },
+    userUpdate: (state, action: PayloadAction<IReduxUpdateUser>) => {
+      return {
+        ...state,
+        ...action.payload,
+      };
+    },
   },
 });
 
-export const { userLogin, userLogout } = userSlice.actions;
+export const { userLogin, userLogout, userUpdate } = userSlice.actions;
 export const userReducer = userSlice.reducer;

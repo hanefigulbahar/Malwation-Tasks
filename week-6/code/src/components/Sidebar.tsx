@@ -1,11 +1,20 @@
 import { useState } from "react";
-import Button from "./ui/Button";
-import Link from "./ui/Link";
-import { useAppDispatch } from "@libs/redux/hooks";
+
+import { useAppDispatch, useAppSelector } from "@libs/redux/hooks";
 import { userLogout } from "@libs/redux/reducers/user";
 
+import Link from "./ui/Link";
+import Button from "./ui/Button";
+import { toast } from "react-hot-toast";
+import { useNavigate } from "react-router-dom";
+
 const SideBar = () => {
+  const navigate = useNavigate();
   const dispatch = useAppDispatch();
+  const loginUserPermissions = useAppSelector(
+    (state) => state.user.permissions
+  );
+
   const [hamburgerMenu, setHamburgerMenu] = useState(false);
 
   const toggleHamburger = () => {
@@ -16,12 +25,16 @@ const SideBar = () => {
     dispatch(userLogout());
   };
 
+  const createNavigateHandler = () => {
+    if (loginUserPermissions?.includes("Create")) {
+      navigate("/create");
+    } else {
+      toast.error("You do not have user create permission!");
+    }
+  };
+
   return (
-    <aside
-      id="default-sidebar"
-      className="sticky top-0 h-screen w-max text-center"
-      aria-label="Sidebar"
-    >
+    <aside className="sticky top-0 h-screen w-max text-center">
       <div className="h-full overflow-y-auto bg-gray-50 px-3 py-4 ">
         <ul className="space-y-3 font-medium">
           <li className="flex justify-start">
@@ -53,6 +66,28 @@ const SideBar = () => {
               >
                 Home
               </Link>
+            )}
+          </li>
+          <li>
+            {hamburgerMenu ? (
+              <Button
+                onClick={createNavigateHandler}
+                color="primary"
+                variant="textOnly"
+                size="medium"
+                icon="create"
+              />
+            ) : (
+              <Button
+                onClick={createNavigateHandler}
+                textStyle="max-md:hidden"
+                leftIcon="create"
+                variant="textOnly"
+                size="medium"
+                color="primary"
+              >
+                Create
+              </Button>
             )}
           </li>
 

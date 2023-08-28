@@ -1,5 +1,7 @@
 import { useRouteError } from "react-router-dom";
+
 import Error from "@components/Error";
+
 interface ErrorDetail {
   data: string;
   error: Error;
@@ -8,12 +10,17 @@ interface ErrorDetail {
   statusText: string;
 }
 
-export default function ErrorPage(): JSX.Element {
+interface IErrorPageProps {
+  status?: number;
+}
+const ErrorPage = ({ status }: IErrorPageProps) => {
   const error = useRouteError() as ErrorDetail;
-  const errorStatus = error.status;
+  console.log(error);
   return (
-    <div>
-      <Error status={errorStatus} />
+    <div className="w-full">
+      <Error status={error || status} />
     </div>
   );
-}
+};
+
+export default ErrorPage;

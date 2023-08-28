@@ -1,4 +1,9 @@
-import ErrorPage from "@pages/Error";
+import {
+  Navigate,
+  RouterProvider,
+  createBrowserRouter,
+} from "react-router-dom";
+
 import Login from "@pages/Login";
 import PageLayout from "@pages/PageLayout";
 import SignIn from "@pages/SignIn";
@@ -7,12 +12,8 @@ import UsersLayout from "@pages/Users/UsersLayout";
 import Users from "@pages/Users/partials/UserListTable";
 
 import useLogin from "@hooks/useLogin";
-
-import {
-  Navigate,
-  RouterProvider,
-  createBrowserRouter,
-} from "react-router-dom";
+import ErrorPage from "@pages/Error";
+import CreateUser from "@pages/CreateUser";
 
 const router = (isLogin: boolean) => {
   return createBrowserRouter([
@@ -28,7 +29,7 @@ const router = (isLogin: boolean) => {
         },
         {
           path: "users",
-          element: <UsersLayout />,
+          Component: UsersLayout,
           caseSensitive: true,
           children: [
             {
@@ -44,6 +45,17 @@ const router = (isLogin: boolean) => {
             },
           ],
         },
+        {
+          path: "create",
+          element: <CreateUser />,
+          caseSensitive: true,
+          errorElement: <ErrorPage />,
+        },
+        {
+          path: "*",
+          element: <ErrorPage />,
+          caseSensitive: true,
+        },
       ],
     },
     {
@@ -53,7 +65,7 @@ const router = (isLogin: boolean) => {
       caseSensitive: true,
     },
     {
-      path: "register",
+      path: "sign-in",
       element: isLogin ? <Navigate to="/" replace /> : <SignIn />,
       errorElement: <ErrorPage />,
       caseSensitive: true,

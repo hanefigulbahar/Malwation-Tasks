@@ -9,9 +9,9 @@ import {
   PURGE,
   REGISTER,
 } from "redux-persist";
-import storage from "redux-persist/lib/storage"; // defaults to localStorage for web
+import storage from "redux-persist/lib/storage";
+
 import { userReducer } from "./reducers/user";
-import { modalReducer } from "./reducers/modal";
 
 const persistConfig = {
   key: "root",
@@ -21,7 +21,6 @@ const persistConfig = {
 
 const allReducers = combineReducers({
   user: userReducer,
-  modal: modalReducer,
 });
 
 const persistedReducer = persistReducer(persistConfig, allReducers);

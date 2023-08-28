@@ -1,15 +1,17 @@
 import { useState } from "react";
 
 import { useAppDispatch, useAppSelector } from "@libs/redux/hooks";
-import { userLogout } from "@libs/redux/reducers/user";
+import { IReduxUser, userLogout } from "@libs/redux/reducers/user";
 
 import Link from "./ui/Link";
 import Button from "./ui/Button";
 
 const Header = () => {
-  const [navbarDropdown, setNavbarDropdown] = useState(false);
-  const user = useAppSelector((state: any) => state.user);
   const dispatch = useAppDispatch();
+
+  const user: IReduxUser = useAppSelector((state) => state.user);
+
+  const [navbarDropdown, setNavbarDropdown] = useState(false);
 
   const navbarDropdownHandle = () => {
     setNavbarDropdown(!navbarDropdown);
@@ -21,22 +23,22 @@ const Header = () => {
 
   return (
     <nav className="border-gray-200 bg-gray-50">
-      <div className="grid grid-cols-4 p-4 max-lg:grid-cols-2">
+      <div className="grid grid-cols-5 place-items-center p-4 max-lg:grid-cols-2">
         <div className="w-max">
           <Link url="/" color="primary" size="medium" variant="textOnly">
             Home Page
           </Link>
         </div>
-        <div className="col-start-4 max-md:col-start-2">
+        <div className="col-start-5 max-md:col-start-2">
           <ul className="grid grid-cols-3 place-items-center">
             <li>
               <Link
-                url="/profile"
+                url={`/users/${user.id ? user.id : "/"}`}
                 color="primary"
                 size="medium"
                 variant="textOnly"
               >
-                Dashboard
+                Profile
               </Link>
             </li>
             <li>
